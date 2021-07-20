@@ -12,8 +12,12 @@
     "miniprogram": {
       "list": [
         {
+          "name": "Home page",
+          "pathName": "pages/landing/landing",
+
           "name": "test space",
           "pathName": "pages/test/test",
+
           "query": "",
           "scene": null
         }
