@@ -29,6 +29,12 @@
           "pathName": "components/tabbar/tabbar",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "landiing",
+          "pathName": "pages/landing/landing",
+          "query": "",
+          "scene": null
         }
       ]
     }

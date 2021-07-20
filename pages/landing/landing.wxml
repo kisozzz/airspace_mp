@@ -2,7 +2,7 @@
 <view class="body vw vh100">
   <view class="container mauto pa0">
     <view class="py50 row-end">
-      <view class="avatar-sm bg-grey"></view>
+      <view class="avatar-md bg-grey"></view>
     </view>
     <view class="fbody mb20">Hello User</view>
     <view class="ftheader">Find your space</view>
@@ -19,5 +19,20 @@
       <view class="mx60 fbody">Top Spaces</view>
     </view>
   </view>
+
+  <!-- swiper -->
+  <view class="mt60 mb60">
+    <swiper class="index-swiper" indicator-dots="{{indicatorDots}}">
+    <block wx:for="{{cards}}" wx:key="index">
+      <swiper-item class="swiper-card">
+        <card-space-image />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- <button bindtap="changeIndicatorDots"> indicator-dots </button> -->
+
+
+<!-- tabbar -->
   <tabbar/>
 </view>
