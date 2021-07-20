@@ -1,4 +1,5 @@
 {
+  "setting": {},
   "condition": {
     "plugin": {
       "list": []
@@ -12,12 +13,14 @@
     "miniprogram": {
       "list": [
         {
-          "name": "Home page",
-          "pathName": "pages/landing/landing",
-
           "name": "test space",
           "pathName": "pages/test/test",
-
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "home page",
+          "pathName": "pages/landing/landing",
           "query": "",
           "scene": null
         }
