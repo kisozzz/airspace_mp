@@ -1,4 +1,6 @@
 <!--pages/test/test.wxml-->
 <text class="blue">pages/test/test.wxml</text>
-<card/>
-<text>fjalfa</text>
+
+
+  <card />
+
