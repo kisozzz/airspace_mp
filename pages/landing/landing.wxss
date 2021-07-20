@@ -1,4 +1,13 @@
 /* pages/landing/landing.wxss */
 .body {
-  background-color: lightblue;
+  background-color: #FAFAFF;
+}
+
+.search-image {
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.container {
+  width: 85%;
 }
