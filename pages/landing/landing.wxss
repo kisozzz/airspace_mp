@@ -17,5 +17,5 @@
 }
 
 .index-swiper {
-  min-height: 620rpx;
+  min-height: 575rpx;
 }
