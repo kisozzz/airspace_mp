@@ -1,6 +1,4 @@
 <!--pages/test/test.wxml-->
-<text class="blue">pages/test/test.wxml</text>
-
-
+<text class="mb20">Card Component</text>
   <card />
 
