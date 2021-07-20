@@ -31,6 +31,12 @@
           "scene": null
         },
         {
+          "name": "form",
+          "pathName": "pages/form/form",
+          "query": "",
+          "scene": null
+        },
+        {
           "name": "landiing",
           "pathName": "pages/landing/landing",
           "query": "",

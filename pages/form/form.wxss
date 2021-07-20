@@ -1,0 +1,8 @@
+/* pages/form/form.wxss */
+.container {
+  width: 80%;
+}
+
+.body {
+  background-color: #FAFAFF;
+}
