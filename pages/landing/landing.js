@@ -3,7 +3,7 @@
   Page({
     data: {
       cards: [
-        'hold',
+        { title: "A nice apartment", city: "Shanghai", image_url: "https://images.unsplash.com/photo-1592247350271-c5efb34dd967?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=675&ixid=MnwxfDB8MXxyYW5kb218MHx8aW50ZXJpb3J8fHx8fHwxNjI2Njc1OTY3&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1200" },
         'hold',
         'hold',
         'hold',
@@ -11,28 +11,11 @@
         'hold'
       ],
       indicatorDots: true,
-      autoplay: false,
-      interval: 5000,
-      duration: 1000,
+      avatar: 'https://ca.slack-edge.com/T02NE0241-UDDHS5Q1X-f91c15199529-512'
     },
     changeIndicatorDots: function(e) {
       this.setData({
         indicatorDots: !this.data.indicatorDots
-      })
-    },
-    changeAutoplay: function(e) {
-      this.setData({
-        autoplay: !this.data.autoplay
-      })
-    },
-    intervalChange: function(e) {
-      this.setData({
-        interval: e.detail.value
-      })
-    },
-    durationChange: function(e) {
-      this.setData({
-        duration: e.detail.value
       })
     }
   })
