@@ -1,0 +1,23 @@
+<!--pages/components/card.wxml-->
+<view class="card w90 pa20 mauto rounded bg-white shadow">
+  <view class="card-img mauto w100 h100 bg-grey rounded">
+    <view class="">img</view>
+  </view>
+
+  <view class="ml30 relative">
+    <view class="w100 row-between">
+      <view class="f36">Space 1</view>
+      <view>stars stars stars</view>
+    </view>
+    <view class="f28">Space address</view>
+
+    <view class="flex">
+      <view>Kitchen</view>
+      <view class="ml20">20Y</view>
+    </view>
+    <view class="flex absolute b0 r0">
+      <view class="red">Edit</view>
+      <view class="red ml20">Delete</view>
+    </view>
+  </view>
+</view>
