@@ -1,0 +1,12 @@
+<!--components/card-request/card-request.wxml-->
+<view class="card row-between w90 pa20 mauto rounded bg-white shadow">
+  <view class="flex items-center">
+    <view class="card-avatar bg-red text-center">img</view>
+    <view class="ml30 f36">Name</view>
+  </view>
+
+  <view class="text-right right-h flex column justify-between pr20">
+    <view><block>2021-7-28</block> to <block>2021-7-30</block></view>
+    <view>4 ppl</view>
+  </view>
+</view>
