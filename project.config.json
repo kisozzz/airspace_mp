@@ -39,6 +39,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.18.0",
+  "appid": "wx251b90fb61f2ac70",
   "projectname": "airwork-mp",
   "debugOptions": {
     "hidedInDevtools": []
