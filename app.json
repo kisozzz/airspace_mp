@@ -7,6 +7,7 @@
   ],
   "usingComponents":{
     "l-button":"/miniprogram_npm/lin-ui/button/index",
+    "l-rate":"/miniprogram_npm/lin-ui/rate/index",
     "btn": "/components/button/button",
     "tabbar": "/components/tabbar/tabbar"
   },

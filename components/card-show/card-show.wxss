@@ -2,7 +2,7 @@
 @import '/stylesheets/index';
 
 .card {
-  position: absolute;
+  /* position: relative; */
   width: 688rpx;
   height: 356rpx;
   left: 30rpx;
@@ -38,21 +38,21 @@
 
 .address {
   position: absolute;
-left: 96rpx;
-right: -32rpx;
-top: 148rpx;
-bottom: 162rpx;
+  left: 96rpx;
+  right: -32rpx;
+  top: 148rpx;
+  bottom: 162rpx;
 
-font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 28rpx;
-line-height: 40rpx;
-/* or 143% */
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  /* or 143% */
 
-letter-spacing: 0.005em;
+  letter-spacing: 0.005em;
 
-color: #263238;
+  color: #263238;
 
 }
 .fee {
@@ -87,4 +87,9 @@ color: #263238;
   height: 40rpx;
   top: 212rpx;
   left: 50rpx;
+}
+
+l-rate {
+  top: 10px;
+  display: flex;
 }

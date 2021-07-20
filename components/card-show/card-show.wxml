@@ -1,9 +1,10 @@
 <!--components/card-show/card-show.wxml-->
 <view class="card">
   <view class="space-name f48">Lost Studio</view>
-  <image src="/images/pin.svg" class="icon-pin"></image>
+  <image src="/images/icons/pin.svg" class="icon-pin"></image>
   <view class="address">123, West Nanjing Rd, Shanghai</view>
-  <image src="/images/rmb.svg" class="icon-rmb"></image>
+  <image src="/images/icons/rmb.svg" class="icon-rmb"></image>
   <view class="fee">15/hour</view>
-  <btn/>
+  <l-rate score="3" size="30" l-class="rating"/>
+  <btn class="absolute r0 b0"/>
 </view>

@@ -3,3 +3,42 @@ btn {
   left: 235px;
   top: 123px; 
 }
+
+card-show {
+  position: absolute;
+  left: 30rpx;
+  bottom: 704rpx;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 260rpx;
+  padding: 50rpx;
+}
+
+.title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: justify;
+  letter-spacing: 3px;
+
+  color: #263238;
+}
+
+.content {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
+
+  text-align: justify;
+
+  color: #263238;
+
+}
