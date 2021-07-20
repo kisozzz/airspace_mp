@@ -1,5 +1,7 @@
 {
   "usingComponents": {
-    "card": "/components/card/card"
+    "card-space": "/components/card-space/card-space",
+    "card-space-image": "/components/card-space-image/card-space-image",
+    "card-request": "/components/card-request/card-request"
   }
 }

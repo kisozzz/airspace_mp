@@ -1,0 +1,8 @@
+<!--components/card-space-image/card-space-image.wxml-->
+<view class="relative card-sizing radius40 ofh">
+  <image class="h100 w100 card-image bg-red " src="{{info.image_url}}" mode="aspectFill"></image>
+  <view class="absolute l0 b0 mb20 ml20">
+    <view class="bold f36 white">{{info.title}}</view>
+    <view class="f28 opacity7 white">{{info.city}}</view>
+  </view>
+</view>
