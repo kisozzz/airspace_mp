@@ -30,7 +30,6 @@
       "disablePlugins": [],
       "outputPath": ""
     },
-    "enableEngineNative": false,
     "useIsolateContext": true,
     "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
@@ -40,7 +39,6 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.18.0",
-  "appid": "wx450ed10122f2d5eb",
   "projectname": "airwork-mp",
   "debugOptions": {
     "hidedInDevtools": []
