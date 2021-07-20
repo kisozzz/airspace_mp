@@ -1,4 +1,12 @@
 <!--pages/test/test.wxml-->
-<text class="blue">pages/test/test.wxml</text>
-<card/>
-<text>fjalfa</text>
+<view class="mt40 mb20">Card Request Component</view>
+
+<card-request />
+
+<view class="mt40 mb20">Card Space Component</view>
+  <card-space />
+
+  <view class="mt40 mb20">Card Space Image Component</view>
+
+<card-space-image />
+

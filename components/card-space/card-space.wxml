@@ -4,12 +4,14 @@
     <view class="">img</view>
   </view>
 
-  <view class="ml30 relative">
-    <view class="w100 row-between">
-      <view class="f36">Space 1</view>
-      <view>stars stars stars</view>
+  <view class="ml30 relative flex column justify-between">
+    <view>
+      <view class="w100 row-between">
+        <view class="f36">Space 1</view>
+        <view>stars stars stars</view>
+      </view>
+      <view class="f28 mt20">Space address</view>
     </view>
-    <view class="f28">Space address</view>
 
     <view class="flex">
       <view>Kitchen</view>

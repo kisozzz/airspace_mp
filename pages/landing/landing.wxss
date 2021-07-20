@@ -11,3 +11,11 @@
 .container {
   width: 85%;
 }
+
+.swiper-card {
+  width: 400rpx !important;
+}
+
+.index-swiper {
+  min-height: 575rpx;
+}
