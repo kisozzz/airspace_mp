@@ -5,6 +5,11 @@
     "pages/landing/landing",
     "pages/test/test"
   ],
+
+  "usingComponents": {
+    "tabbar": "/components/tabbar/tabbar"
+  },
+  
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -13,4 +18,6 @@
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
+
 }
+

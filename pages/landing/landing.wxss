@@ -1,1 +1,4 @@
 /* pages/landing/landing.wxss */
+.body {
+  background-color: lightblue;
+}
