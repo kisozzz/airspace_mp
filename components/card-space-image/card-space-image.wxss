@@ -2,10 +2,11 @@
 @import '/stylesheets/index';
 
 .card {
-  max-width: 45%;
+  /* max-width: 45%; */
   min-height: 500rpx;
   /* border: 1px solid; */
   border-radius: 40rpx;
+  margin: auto 10rpx;
 }
 
 .shadow {
