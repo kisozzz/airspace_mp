@@ -1,4 +1,5 @@
 <!--pages/landing/landing.wxml-->
 <view class="container w60 mauto">
   <text>hi</text>
+  <text>test test</text>
 </view>
