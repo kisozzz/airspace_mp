@@ -1,4 +1,7 @@
 <!--pages/test/test.wxml-->
-<text class="mb20">Card Component</text>
-  <card />
+<view class="mb20">Card Space Component</view>
+  <card-space />
 
+  <view class="mt40 mb20">Card Space Image Component</view>
+
+<card-space-image />
