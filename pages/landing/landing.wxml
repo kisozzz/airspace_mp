@@ -2,7 +2,7 @@
 <view class="body vw vh100">
   <view class="container mauto pa0">
     <view class="py50 row-end">
-      <view class="avatar-sm bg-grey"></view>
+      <view class="avatar-sm bg-grey mr30"></view>
     </view>
     <view class="fbody mb20">Hello User</view>
     <view class="ftheader">Find your space</view>

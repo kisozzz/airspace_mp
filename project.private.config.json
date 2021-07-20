@@ -29,6 +29,12 @@
           "pathName": "components/tabbar/tabbar",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "form",
+          "pathName": "pages/form/form",
+          "query": "",
+          "scene": null
         }
       ]
     }
