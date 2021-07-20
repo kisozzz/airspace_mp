@@ -1,12 +1,17 @@
 /* components/card-space-image/card-space-image.wxss */
 @import '/stylesheets/index';
 
-.card {
+.card-sizing {
   /* max-width: 45%; */
   min-height: 500rpx;
+  height: 500rpx;
   /* border: 1px solid; */
-  border-radius: 40rpx;
   margin: auto 10rpx;
+}
+
+.card-image {
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .shadow {
