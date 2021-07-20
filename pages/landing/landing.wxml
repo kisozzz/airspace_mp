@@ -1,5 +1,13 @@
 <!--pages/landing/landing.wxml-->
-<view class="container w60 mauto">
-  <text>hi</text>
-  <text>test test</text>
+<view class="body vw vh100">
+  <view class="container w90 mauto pa0">
+    <view class="avatar-sm bg-blue"></view>
+    <view>Hello Laura</view>
+    <view>Find your space</view>
+    <view class="choices">
+      <text>Popular</text>
+      <text>Top Spaces</text>
+    </view>
+  </view>
+  <tabbar/>
 </view>

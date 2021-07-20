@@ -9,6 +9,6 @@
 
 .filter {
   height:100%;
-  align-items:center;
+  align-items: center;
   display:flex;
 }

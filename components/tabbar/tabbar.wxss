@@ -1,0 +1,17 @@
+/* components/tabbar.wxss */
+@import '/app';
+
+.me-icon, .add-icon, .home-icon {
+  height: 40rpx;
+  width: 40rpx;
+}
+
+.bottom-tab {
+  position:fixed;
+  width: 100%;
+  bottom:0;
+  height: 150rpx;
+  background-color:white;
+  border-top:solid 1px #f0f0f0;
+  z-index: 99999;
+}
