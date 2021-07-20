@@ -1,0 +1,6 @@
+<!--pages/space_show/space_show.wxml-->
+<view class="container">
+  <card-show/>
+
+</view>
+

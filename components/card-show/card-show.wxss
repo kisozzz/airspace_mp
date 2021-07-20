@@ -1,0 +1,90 @@
+/* components/card-show/card-show.wxss */
+@import '/stylesheets/index';
+
+.card {
+  position: absolute;
+  width: 688rpx;
+  height: 356rpx;
+  left: 30rpx;
+  bottom: 704rpx;
+  background-color: white;
+
+  filter: drop-shadow(0rpx 4rpx 4rpx rgba(0, 0, 0, 0.2));
+  border-radius: 20rpx;
+}
+
+.space-name {
+  font-weight: 600;
+  font-style: normal;
+  line-height: 72rpx;
+  position: absolute;
+  height: 64rpx;
+  left: 50rpx;
+  right: 14rpx;
+  top: 50rpx;
+  display: flex;
+  align-items: center;
+
+  color: #2C3D63;
+}
+
+.pin{
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  left: 50rpx;
+  top: 148rpx;
+}
+
+.address {
+  position: absolute;
+left: 96rpx;
+right: -32rpx;
+top: 148rpx;
+bottom: 162rpx;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 28rpx;
+line-height: 40rpx;
+/* or 143% */
+
+letter-spacing: 0.005em;
+
+color: #263238;
+
+}
+.fee {
+  position: absolute;
+  width: 58px;
+  height: 20px;
+  left: 48px;
+  top: 108px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  letter-spacing: 0.005em;
+
+  color: #263238;
+
+}
+.icon-pin {
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  left: 50rpx;
+  top: 148rpx;
+}
+.icon-rmb {
+  position: absolute;
+  width: 40rpx;
+  height: 40rpx;
+  top: 212rpx;
+  left: 50rpx;
+}

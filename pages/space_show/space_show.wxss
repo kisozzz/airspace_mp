@@ -1,0 +1,5 @@
+/* pages/space_show/space_show.wxss */
+btn {
+  left: 235px;
+  top: 123px; 
+}

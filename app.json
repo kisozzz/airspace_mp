@@ -2,8 +2,14 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/space_show/space_show"
   ],
+  "usingComponents":{
+    "l-button":"/miniprogram_npm/lin-ui/button/index",
+    "btn": "/components/button/button"
+  },
+
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
