@@ -5,14 +5,26 @@ Page({
    * 页面的初始数据
    */
   data: {
+    space: {
+      date: '',
+      num: '',
+      info: ''
+    },
+  },
 
+  submit(event){
+    const {detail} = event;
+  },
+
+  bindShowPopup() {
+    this.setData({ showPopup: true })
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    wx.lin.initValidateForm(this)
   },
 
   /**

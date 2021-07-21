@@ -3,13 +3,18 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/test/test",
-    "pages/space_show/space_show"
+    "pages/space_show/space_show",
     "pages/landing/landing",
     "pages/form/form"
   ],
   "usingComponents":{
     "l-button":"/miniprogram_npm/lin-ui/button/index",
     "l-rate":"/miniprogram_npm/lin-ui/rate/index",
+    "l-arc-popup":"/miniprogram_npm/lin-ui/arc-popup/index",
+    "l-form":"/miniprogram_npm/lin-ui/form/index",
+    "l-form-item":"/miniprogram_npm/lin-ui/form-item/index",
+    "l-input":"/miniprogram_npm/lin-ui/input/index",
+    "l-calendar":"/miniprogram_npm/lin-ui/calendar/index",
     "btn": "/components/button/button",
     "tabbar": "/components/tabbar/tabbar"
   },

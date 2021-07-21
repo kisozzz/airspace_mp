@@ -1,6 +1,7 @@
 
 {
   "usingComponents": {
-    "card-show": "/components/card-show/card-show"
+    "card-show": "/components/card-show/card-show",
+    "btn": "/components/button/button"
   }
 }
