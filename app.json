@@ -5,13 +5,15 @@
     "pages/test/test",
     "pages/space_show/space_show",
     "pages/landing/landing",
-    "pages/form/form"
+    "pages/form/form",
+    "pages/search/search"
   ],
   "usingComponents":{
     "l-button":"/miniprogram_npm/lin-ui/button/index",
     "l-rate":"/miniprogram_npm/lin-ui/rate/index",
     "btn": "/components/button/button",
-    "tabbar": "/components/tabbar/tabbar"
+    "tabbar": "/components/tabbar/tabbar",
+    "card-space-image": "/components/card-space-image/card-space-image"
   },
 
   "window": {
