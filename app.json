@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/index/index",
+    "pages/landing/landing",
     "pages/logs/logs",
     "pages/test/test",
     "pages/space_show/space_show",
-    "pages/landing/landing",
+    "pages/index/index",
     "pages/my-bookings-listings/my-bookings-listings",
     "pages/form/form",
     "pages/search/search",
