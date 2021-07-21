@@ -1,0 +1,6 @@
+/* components/request-card.wxss */
+@import '/app';
+.card {
+  height: 80px;
+
+}

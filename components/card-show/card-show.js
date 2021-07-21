@@ -18,8 +18,8 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    openPopup() {
-      this.selectComponent('btn')
-    }
+   openPopup() {
+      this.selectOwnerComponent().bindShowPopup()
+   }
   }
 })

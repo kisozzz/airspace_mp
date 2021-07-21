@@ -23,11 +23,23 @@
   <!-- swiper -->
   <view class="mt60 mb60">
     <swiper class="index-swiper" indicator-dots="{{indicatorDots}}">
-      <block wx:for="{{cardsBackup}}" wx:key="index">
-        <swiper-item class="swiper-card">
-          <card-space-image info="{{item}}" />
-        </swiper-item>
+
+      <block wx:if="{{spaces}}">
+        <block wx:for="{{spaces}}" wx:key="index">
+          <swiper-item class="swiper-card">
+            <card-space-image info="{{item}}" />
+          </swiper-item>
+        </block>
       </block>
+
+      <block wx:if="{{!spaces}}">
+        <block wx:for="{{spacesBackup}}" wx:key="index">
+          <swiper-item class="swiper-card">
+            <card-space-image info="{{item}}" />
+          </swiper-item>
+        </block>
+      </block>
+      
     </swiper>
   </view>
   <tabbar/>

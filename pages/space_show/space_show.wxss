@@ -43,6 +43,11 @@ card-show {
 
 }
 
+.l-form-btn-class{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10rpx;
+}
 .title-form {
   font-family: Poppins;
   font-style: normal;
