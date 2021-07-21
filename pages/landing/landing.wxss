@@ -13,9 +13,67 @@
 }
 
 .swiper-card {
-  width: 400rpx !important;
+  width: 426rpx !important;
 }
 
 .index-swiper {
-  min-height: 575rpx;
+  min-height: 600rpx;
+  
+}
+
+.hello {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 40rpx;
+  line-height: 60rpx;
+  /* identical to box height */
+
+
+  color: #263238;
+}
+
+.findtext {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44rpx;
+  line-height: 66rpx;
+  /* identical to box height */
+
+
+  color: #263238;
+
+}
+
+.search {
+  background: #FFFFFF;
+  box-shadow: 0rpx 2rpx 4rpx rgba(0, 0, 0, 0.1);
+  border-radius: 50rpx;
+  height: 50rpx;
+}
+
+.tapp {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36rpx;
+  line-height: 54rpx;
+  /* identical to box height */
+
+
+  color: #FF7162;
+
+}
+
+.tapt {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36rpx;
+  line-height: 54rpx;
+  /* identical to box height */
+
+
+  color: #C4C4C4;
 }
