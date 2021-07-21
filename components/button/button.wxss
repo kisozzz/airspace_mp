@@ -11,8 +11,19 @@
   border-radius: 8px;
 }
 
-.label {
+.button-grey {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 35px;
+  bottom: 20px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
 
+.label-red {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
@@ -20,6 +31,16 @@
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.1px;
-
   color: #FF7162;
+}
+
+.label-grey {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.1px;
+  color: #aaa;
 }
