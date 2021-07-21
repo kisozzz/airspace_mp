@@ -8,6 +8,7 @@ Page({
     space: {
       date: '',
       num: '',
+
       info: ''
     },
   },

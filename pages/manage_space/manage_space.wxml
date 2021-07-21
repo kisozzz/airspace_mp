@@ -1,0 +1,11 @@
+<view class ="w100 bg-black">
+  <image class="h100 w100 card-image bg-grey" mode="aspectFill" src="{{cards[0].image_url}}" class="bg-image"></image>
+</view>
+<view>Requests</view>
+  <request-card/>
+  <request-card/>
+<view>Past bookings</view>
+  <request-card/>
+<view class="edit-btn w100">
+  <btn color="red" text="Edit Space"/>
+</view>

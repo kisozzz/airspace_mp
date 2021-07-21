@@ -1,8 +1,8 @@
 <!--components/tabbar.wxml-->
 <view class="bottom-tab row-center">
   <view class="icons w70 row-between">
-    <image src="/images/icons/home.svg" class="home-icon"></image>
-    <image src="/images/icons/add.svg" class="add-icon"></image>
-    <image src="/images/icons/me.svg" class="me-icon"></image>
+    <navigator url="/pages/landing/landing"><image src="/images/icons/home.svg" class="home-icon pa20"></image></navigator>
+    <image src="/images/icons/add.svg" class="add-icon pa20"></image>
+    <navigator url="/pages/my-bookings-listings/my-bookings-listings"><image src="/images/icons/me.svg" class="me-icon pa20"></image></navigator>
   </view>
 </view>

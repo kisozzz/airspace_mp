@@ -7,7 +7,9 @@
     "pages/landing/landing",
     "pages/my-bookings-listings/my-bookings-listings",
     "pages/form/form",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/manage_space/manage_space",
+    "pages/approve_booking/approve_booking"
   ],
   "usingComponents":{
     "l-button":"/miniprogram_npm/lin-ui/button/index",
@@ -19,7 +21,8 @@
     "l-calendar":"/miniprogram_npm/lin-ui/calendar/index",
     "btn": "/components/button/button",
     "tabbar": "/components/tabbar/tabbar",
-    "card-space-image": "/components/card-space-image/card-space-image"
+    "card-space-image": "/components/card-space-image/card-space-image",
+    "request-card": "/components/request-card/request-card"
   },
 
   "window": {

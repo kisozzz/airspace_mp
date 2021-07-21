@@ -1,2 +1,2 @@
 <!--components/button/button.wxml-->
-<view class="button-{{color}}"> <text class="label-{{color}}">{{text}}</text></view>
+<view class="button-{{color}} mauto"><text class="label-{{color}}">{{text}}</text></view>
