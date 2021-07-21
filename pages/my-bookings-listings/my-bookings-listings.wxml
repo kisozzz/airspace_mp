@@ -4,9 +4,8 @@
   <view class="py100">
     <view class="text-center bold fsheader red-text">My Bookings</view>
   </view>
-
   <view>
-    <block wx:for="{{bookings}}" wx:key="index">
+    <block wx:for="{{spaces}}" wx:key="index">
       <view class="mb20">
         <card-space info="{{item}}" />
       </view>
