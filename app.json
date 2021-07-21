@@ -4,6 +4,8 @@
     "pages/logs/logs",
     "pages/test/test",
     "pages/space_show/space_show"
+    "pages/landing/landing",
+    "pages/form/form"
   ],
   "usingComponents":{
     "l-button":"/miniprogram_npm/lin-ui/button/index",

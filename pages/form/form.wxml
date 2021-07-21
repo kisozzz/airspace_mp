@@ -1,0 +1,33 @@
+<view class="body vw vh100"> 
+  <view class="container mauto pa0">
+    <view class="f48 py50">Add your space</view>
+    <view>
+      <view>Title:</view>
+      <input class="bb mb50"/>
+    </view>
+    <view>
+      <view>Type:</view>
+      <input class="bb mb50"/>
+    </view>
+    <view>
+      <view class="mb40">City:</view>
+      <picker range="{{array}}">
+        <view class="picker bb mb50">
+          Currently selected: 
+        </view>
+      </picker>
+    </view>
+    <view>
+      <view>Address:</view>
+      <input class="bb mb50"/>
+    </view>
+    <view>
+      <view>Price per night:</view>
+      <input class="bb mb50"/>
+    </view>
+    <view>
+      <view>Description:</view>
+      <input class="bb"/>
+    </view>
+  </view>
+</view>
