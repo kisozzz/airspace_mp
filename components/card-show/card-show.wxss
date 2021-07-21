@@ -15,7 +15,7 @@
   font-weight: 600;
   font-style: normal;
   line-height: 55rpx;
-  position: absolute;
+  position: relative;
   height: 64rpx;
   left: 30rpx;
   right: 14rpx;
@@ -80,6 +80,9 @@
   left: 50rpx;
 }
 
-
+.rating {
+  /* left: 10rpx; */
+  top: 180rpx;
+}
 
 

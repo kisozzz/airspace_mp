@@ -4,17 +4,28 @@ btn {
   top: 246rpx; 
 }
 
-card-show {
-  position: absolute;
-  left: 30rpx;
-  bottom: 704rpx;
+.card-info {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -130rpx;
+  margin-bottom: -130rpx;
+  /* left: 100rpx;
+  right: 30rpx; */
+  
+  /* bottom: 700rpx; */
+}
+.banner-space {
+
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  margin-top: 260rpx;
-  padding: 50rpx;
+  /* margin-top: 20rpx; */
+  padding: 40rpx;
 }
 
 .title {

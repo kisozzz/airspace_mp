@@ -6,5 +6,5 @@
   <image src="/images/icons/rmb.svg" class="icon-rmb"></image>
   <view class="fee">{{info.price}}/hour</view>
   <btn bindtap="openPopup" color="red" text="Book Now" class="absolute r0 b0 pr20"/>
-  <l-rate score="3" size="30" active-color="#E9C500" inActive-color="#F3ECC6" l-class="absolute l0 b0 pa40 pr20"/>
+  <l-rate score="3" size="30" active-color="#E9C500" inActive-color="#F3ECC6" l-class="rating relative pa40 pl40"/>
 </view>
