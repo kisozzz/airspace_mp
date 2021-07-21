@@ -10,6 +10,8 @@
         <card-space info="{{item}}" booking="{{booking}}" />
       </view>
     </block>
+    <view class="text-center" wx:if="{{bookings.length === 0}}">You don't currently have any bookings
+    </view> 
   </view>
 
   <tabbar />
