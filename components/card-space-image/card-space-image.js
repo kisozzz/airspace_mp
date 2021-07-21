@@ -18,6 +18,8 @@ Component({
    * Component methods
    */
   methods: {
-
+    navigateToShow() {
+      console.log('dd')
+    }
   }
 })

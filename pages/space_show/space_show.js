@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    space: {
+    booking_form: {
       date: '',
       num: '',
       info: ''
@@ -24,14 +24,28 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    wx.lin.initValidateForm(this)
+    wx.lin.initValidateForm(this);
+    // console.log(options.id)
+    const space_id = options.id;
+    const page = this;
+    wx.request({
+      url: `https://airspace-api.herokuapp.com/api/v1/spaces/${space_id}`,
+      method: "GET",
+      success(res) {
+        const space = res.data;
+        console.log(space);
+        page.setData({
+          space: space
+        });
+      }
+    })
+    
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
   },
 
   /**
