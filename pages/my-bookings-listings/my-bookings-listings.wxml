@@ -5,9 +5,9 @@
     <view class="text-center bold fsheader red-text">My Bookings</view>
   </view>
   <view>
-    <block wx:for="{{spaces}}" wx:key="index">
+    <block wx:for="{{bookings}}" wx:for-item="booking" wx:key="index">
       <view class="mb20">
-        <card-space info="{{item}}" />
+        <card-space info="{{item}}" booking="{{booking}}" />
       </view>
     </block>
   </view>

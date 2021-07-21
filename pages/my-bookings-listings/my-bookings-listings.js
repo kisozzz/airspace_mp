@@ -5,7 +5,7 @@ Page({
    * Page initial data
    */
   data: {
-    bookings: [
+    bookingsBackup: [
       { title: "Cozy Kitchen", city: "Beijing", price: 500, address: "50 Beiluoguxiang", category: 'kitchen', rating: 3, image_url: "https://images.unsplash.com/photo-1600607686527-6fb886090705?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=675&ixid=MnwxfDB8MXxyYW5kb218MHx8aW50ZXJpb3J8fHx8fHwxNjI2Njc2MDU4&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1200" },
       { title: 'Open Workspace', city: 'Shanghai', price: 600, address: '100 West Nanjing Rd.', category: 'workspace', rating: 4, image_url: "https://images.unsplash.com/photo-1519642918688-7e43b19245d8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=675&ixid=MnwxfDB8MXxyYW5kb218MHx8aW50ZXJpb3J8fHx8fHwxNjI2Njc2MTA2&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1200"}
     ]
@@ -27,8 +27,10 @@ Page({
             spaces.push(booking.space)
           })
           console.log(spaces)
+          console.log(bookings)
           page.setData({
-            spaces: spaces
+            spaces: spaces,
+            bookings: bookings
           });
         }
       })
