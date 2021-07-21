@@ -7,7 +7,7 @@
 </view>
 
 
-<l-arc-popup show="{{true}}" max-height="650" min-height="200">
+<l-arc-popup show="{{showPopup}}" max-height="650" min-height="200">
   <view style="height: 800rpx;">
 <!-- form -->
   <view class="container-form pa30">
@@ -27,7 +27,7 @@
             <l-input id="info" value="{{space.info}}" hide-label show-row="{{false}}"/>
         </l-form-item>
 
-        <btn color="red" text="Submit" />
+        <btn color="red" text="Submit" class="pa20"/>
     </l-form>
   </view>
   </view>
