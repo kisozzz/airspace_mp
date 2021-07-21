@@ -4,10 +4,10 @@
     <view class="py50 row-end">
       <image src="{{avatar}}" class="avatar-md bg-grey"></image>
     </view>
-    <view class="fbody mb20">Hello User</view>
-    <view class="ftheader">Find your space</view>
-    <view class="w100 bg-white py20 radius50 my50">
-      <view class="mx20 flex items-center">
+    <view class="hello fbody mb20">Hello User</view>
+    <view class="findtext ftheader">Find your space</view>
+    <view class="search w100 bg-white py20 radius50 my50">
+      <view class="mx20 flex items-center pl20">
         <image src="/images/icons/spotlight.svg" class="search-image"></image>
         <view class="ml20">
           <input placeholder="Search for a space"/>
@@ -15,13 +15,13 @@
       </view>
     </view>
     <view class="choices flex">
-      <view class="fbody">Popular</view>
-      <view class="mx60 fbody">Top Spaces</view>
+      <view class="tapp fbody">Popular</view>
+      <view class="tapt mx60 fbody">Top Spaces</view>
     </view>
   </view>
 
   <!-- swiper -->
-  <view class="mt60 mb60">
+  <view class="mt60 mb60 ml20">
     <swiper class="index-swiper" indicator-dots="{{indicatorDots}}">
 
       <block wx:if="{{spaces}}">
