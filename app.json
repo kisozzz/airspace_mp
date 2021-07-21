@@ -3,8 +3,9 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/test/test",
-    "pages/space_show/space_show"
+    "pages/space_show/space_show",
     "pages/landing/landing",
+    "pages/my-bookings-listings/my-bookings-listings",
     "pages/form/form"
   ],
   "usingComponents":{

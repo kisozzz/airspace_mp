@@ -35,6 +35,12 @@
           "pathName": "pages/landing/landing",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "my bookings and listings",
+          "pathName": "pages/my-bookings-listings/my-bookings-listings",
+          "query": "",
+          "scene": null
         }
       ]
     }

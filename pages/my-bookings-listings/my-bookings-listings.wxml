@@ -1,0 +1,16 @@
+<!--pages/my-bookings-listings/my-bookings-listings.wxml-->
+<view class="body-bg-color vh100 vw100">
+
+  <view class="py100">
+    <view class="text-center bold fsheader red-text">My Bookings</view>
+  </view>
+
+  <view>
+    <block wx:for="{{bookings}}" wx:key="index">
+      <view class="mb20">
+        <card-space info="{{item}}" />
+      </view>
+    </block>
+  </view>
+
+</view>
