@@ -1,5 +1,6 @@
 /* components/card-space-image/card-space-image.wxss */
 @import '/stylesheets/index';
+@import '/app';
 
 .card-sizing {
   /* max-width: 45%; */

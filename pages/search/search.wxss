@@ -1,0 +1,14 @@
+/* pages/search/search.wxss */
+.search-results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20rpx;
+}
+
+.body {
+  background-color: #FAFAFF;
+}
+
+.search-text {
+  color: #FF7162 ;
+}
