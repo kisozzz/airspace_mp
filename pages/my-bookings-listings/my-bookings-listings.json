@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "card-space": "/components/card-space/card-space"
+  }
+}
