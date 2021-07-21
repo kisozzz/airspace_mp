@@ -17,6 +17,12 @@
       })
     },
 
+    methods: {
+      navigateToShow() {
+        console.log('dd')
+      }
+    },
+
     onLoad: function (options) {
       const page = this;
       wx.request({

@@ -35,7 +35,7 @@
       <block wx:if="{{!spaces}}">
         <block wx:for="{{spacesBackup}}" wx:key="index">
           <swiper-item class="swiper-card">
-            <card-space-image info="{{item}}" />
+            <card-space-image bindtap="navigateToShow"  info="{{item}}" />
           </swiper-item>
         </block>
       </block>
