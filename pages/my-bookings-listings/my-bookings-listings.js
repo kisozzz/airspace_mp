@@ -15,7 +15,24 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    const userID = options.id || 1
+    const page = this;
+      wx.request({
+        url: `https://airspace-api.herokuapp.com/api/v1/bookings/user/${userID}`,
+        method: "GET",
+        success(res) {
+          const bookings = res.data.bookings
+          const spaces = []
+          bookings.forEach((booking) => {
+            spaces.push(booking.space)
+          })
+          console.log(spaces)
+          page.setData({
+            spaces: spaces
+          });
+        }
+      })
+    
   },
 
   /**
