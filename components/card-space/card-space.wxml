@@ -7,8 +7,9 @@
   <view class="ml30 relative flex column justify-between">
     <view class="flex column">
       <view class="w100 row-between">
-        <view class="f32">{{info.title}}</view>
-        <view>stars stars</view>
+        <view class="f30">{{info.title}}</view>
+        <!-- <view>stars stars</view> -->
+        <l-rate score="{{info.rating}}" size="22" l-class="" active-color="#E9C501" inActive-color="#F3ECC6"/>
       </view>
       <view class="f24 mt20 opacity7">{{info.address}}</view>
     </view>
@@ -19,7 +20,7 @@
     </view>
     <view class="flex absolute b0 r0">
       <view class="red-text">Edit</view>
-      <view class="red-text ml20">Delete</view>
+      <view class="red-text ml20">Cancel</view>
     </view>
   </view>
 </view>
