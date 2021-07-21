@@ -12,3 +12,12 @@
 #requests {
   padding-top: 30rpx;
 }
+
+.card-image {
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.image-container{
+  height: 250px;
+}

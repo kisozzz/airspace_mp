@@ -1,7 +1,7 @@
-<view class ="w100 bg-black">
-  <image class="h100 w100 card-image bg-grey" mode="aspectFill" src="{{cards[0].image_url}}" class="bg-image"></image>
+<view class ="w100 bg-grey image-container">
+  <image class="h100 w100 card-image" mode="aspectFill" src="{{cards[0].image_url}}"></image>
 </view>
-<scroll-view scroll-y style="height: 660px;"> 
+<scroll-view scroll-y style="height: 680px;"> 
   <view class="header-text f36" id="requests">Requests</view>
     <request-card/>
     <request-card/>
@@ -9,6 +9,8 @@
   <view class="header-text f36">Past bookings</view>
     <request-card/>
     <request-card/>
-    <btn color="red" text="Edit Space"/>
+    <view class="mt40">
+      <btn color="red" text="Edit Space"/>
+    </view>
 </scroll-view>
 <tabbar/>
