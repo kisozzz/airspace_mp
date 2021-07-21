@@ -1,4 +1,11 @@
 <!--pages/test/test.wxml-->
+<view class="mt40 mb20">Buttons with Props</view>
+
+<button text="Book Now" color="red" />
+<button text="Deny" color="grey" />
+
+
+
 <view class="mt40 mb20">Card Request Component</view>
 
 <card-request />
@@ -9,4 +16,7 @@
   <view class="mt40 mb20">Card Space Image Component</view>
 
 <card-space-image />
+
+
+
 

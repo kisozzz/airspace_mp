@@ -35,6 +35,12 @@
           "pathName": "pages/landing/landing",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "test",
+          "pathName": "pages/test/test",
+          "query": "",
+          "scene": null
         }
       ]
     }
