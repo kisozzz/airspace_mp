@@ -1,1 +1,23 @@
-/* pages/approve_booking/approve_booking.wxss */
+/* pages/manage_space/manage_space.wxss */
+.edit-btn {
+  /* position: fixed;
+  bottom: 0;
+  margin-bottom: 150rpx */
+}
+
+.header-text {
+  margin: 0rpx 36rpx;
+}
+
+#requests {
+  padding-top: 30rpx;
+}
+
+.card-image {
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.image-container{
+  height: 250px;
+}

@@ -3,5 +3,5 @@
 .card {
   height: 80px;
   border-radius: 8px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
 }

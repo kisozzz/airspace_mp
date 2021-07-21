@@ -1,6 +1,21 @@
-<view class ="w100 bg-black">
-  <image src="{{cards[0].image_url}}" class="bg-image"></image>
+<view class ="w100 bg-grey image-container">
+  <image class="h100 w100 card-image" mode="aspectFill" src="{{cards[0].image_url}}"></image>
 </view>
-<view>Request Info</view>
-<btn color="red" text="Approve"/>
-<btn color="grey" text="Deny"/>
+<view class="header-text f36" id="requests">Request info</view>
+  <view class="w80 mauto f32 mt20">Name:</view>
+  <view class="bb w80 mauto mb50 f28">Qixi Zhang</view>
+  <view class="w80 mauto f32">People:</view>
+  <view class="bb w80 mauto mb50 f28">4 People</view>
+  <view class="w80 mauto f32">Date:</view>
+  <view class="bb w80 mauto mb50 f28">2021-7-28 to 2021-8-1</view>
+  <view class="w80 mauto f32">Additional info:</view>
+  <view class="bb w80 mauto mb50 f28">Can I brings dogs?</view>
+  <view class="w80 row-around mauto">
+    <view>
+      <btn color="red" text="Approve"/>
+    </view>
+    <view>
+      <btn color="grey" text="Deny"/>
+    </view>
+  </view>
+<tabbar/>
