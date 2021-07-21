@@ -5,8 +5,6 @@
   /* position: relative; */
   width: 688rpx;
   height: 356rpx;
-  left: 30rpx;
-  bottom: 704rpx;
   background-color: white;
 
   filter: drop-shadow(0rpx 4rpx 4rpx rgba(0, 0, 0, 0.2));
@@ -16,31 +14,24 @@
 .space-name {
   font-weight: 600;
   font-style: normal;
-  line-height: 72rpx;
+  line-height: 55rpx;
   position: absolute;
   height: 64rpx;
-  left: 50rpx;
+  left: 30rpx;
   right: 14rpx;
-  top: 50rpx;
+  top: 45rpx;
   display: flex;
   align-items: center;
 
   color: #2C3D63;
 }
 
-.pin{
-  position: absolute;
-  width: 40rpx;
-  height: 40rpx;
-  left: 50rpx;
-  top: 148rpx;
-}
 
 .address {
   position: absolute;
   left: 96rpx;
   right: -32rpx;
-  top: 148rpx;
+  top: 150rpx;
   bottom: 162rpx;
 
   font-family: Roboto;
@@ -79,7 +70,7 @@
   width: 40rpx;
   height: 40rpx;
   left: 50rpx;
-  top: 148rpx;
+  top: 150rpx;
 }
 .icon-rmb {
   position: absolute;
@@ -89,12 +80,6 @@
   left: 50rpx;
 }
 
-/* .rating {
-  position:absolute;
-  right: 0;
-  bottom: 0;
-  /* display: flex;
-  justify-content: center; 
-}*/
+
 
 

@@ -10,7 +10,7 @@
 
 
 <l-arc-popup show="{{showPopup}}" max-height="650" min-height="200">
-  <view style="height: 800rpx;">
+  <view style="height: 580rpx;">
 <!-- form -->
   <view class="container-form pa30">
     <view class="title-form pb20">Book Space</view>
