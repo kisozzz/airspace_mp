@@ -29,7 +29,7 @@
             <l-input id="info" value="{{booking_form.info}}" hide-label show-row="{{false}}"/>
         </l-form-item>
 
-        <btn color="red" text="Submit" class="pa20"/>
+        <btn bindtap="createBooking" color="red" text="Submit" class="pa20"/>
     </l-form>
   </view>
   </view>

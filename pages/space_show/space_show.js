@@ -20,6 +20,46 @@ Page({
     this.setData({ showPopup: true })
   },
 
+  createBooking() {
+    // console.log('connected');
+    const space_id = this.data.space.id;
+    const user_id = 1;
+    const start_date = '2021/07/20'
+    const end_date = '2021/07/22'
+    let booking = {
+      space_id: space_id,
+      user_id: user_id,
+      start_date: start_date,
+      end_date: end_date
+    }
+    wx.request({
+    // https://airspace-api.herokuapp.com/api/v1/spaces/${space_id}/bookings
+     url: `https://airspace-api.herokuapp.com/api/v1/spaces/${space_id}/bookings`,
+     method: 'POST',
+     data: { booking: booking },
+     success(res) {
+       console.log(res)
+        wx.redirectTo({
+          url: `/pages/my-bookings-listings/my-bookings-listings?id=${user_id}`
+        });
+      }
+    })
+
+    // // Post data to API
+    // wx.request({
+    //   // POST /api/v1/spaces/:space_id/bookings
+    //   url: `http://localhost:3000/api/v1/stories/${story_id}/comments`,
+    //   method: 'POST',
+    //   data: {comment: comment},
+    //   success() {
+    //     // redirect when done
+    //     wx.redirectTo({
+    //       url: `/pages/story/story?id=${story_id}`
+    //     });
+    //   }
+    // });
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
