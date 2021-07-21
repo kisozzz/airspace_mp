@@ -1,0 +1,6 @@
+<view class ="w100 bg-black">
+  <image src="{{cards[0].image_url}}" class="bg-image"></image>
+</view>
+<view>Request Info</view>
+<btn color="red" text="Approve"/>
+<btn color="grey" text="Deny"/>

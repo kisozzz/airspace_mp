@@ -47,6 +47,24 @@
           "pathName": "pages/search/search",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "manage_space",
+          "pathName": "pages/manage_space/manage_space",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "approve_booking",
+          "pathName": "pages/approve_booking/approve_booking",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "request card",
+          "pathName": "components/request-card/request-card",
+          "query": "",
+          "scene": null
         }
       ]
     }

@@ -6,14 +6,17 @@
     "pages/space_show/space_show",
     "pages/landing/landing",
     "pages/form/form",
-    "pages/search/search"
+    "pages/search/search",
+    "pages/manage_space/manage_space",
+    "pages/approve_booking/approve_booking"
   ],
   "usingComponents":{
     "l-button":"/miniprogram_npm/lin-ui/button/index",
     "l-rate":"/miniprogram_npm/lin-ui/rate/index",
     "btn": "/components/button/button",
     "tabbar": "/components/tabbar/tabbar",
-    "card-space-image": "/components/card-space-image/card-space-image"
+    "card-space-image": "/components/card-space-image/card-space-image",
+    "request-card": "/components/request-card/request-card"
   },
 
   "window": {
