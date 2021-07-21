@@ -1,8 +1,8 @@
 <!--pages/test/test.wxml-->
 <view class="mt40 mb20">Buttons with Props</view>
 
-<button text="Book Now" color="red" />
-<button text="Deny" color="grey" />
+<btn text="Book Now" color="red" />
+<btn text="Deny" color="grey" />
 
 
 
