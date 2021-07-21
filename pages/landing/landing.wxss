@@ -14,11 +14,11 @@
 
 .swiper-card {
   width: 426rpx !important;
-  height: 700rpx !important;
 }
 
 .index-swiper {
-  min-height: 580rpx;
+  min-height: 600rpx;
+  
 }
 
 .hello {
