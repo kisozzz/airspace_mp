@@ -1,0 +1,24 @@
+{
+  "name": "airspace_mp",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "lin-ui": "^0.9.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kisozzz/airwork_mp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kisozzz/airwork_mp/issues"
+  },
+  "homepage": "https://github.com/kisozzz/airwork_mp#readme",
+  "description": ""
+}

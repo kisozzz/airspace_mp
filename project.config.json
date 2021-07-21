@@ -4,7 +4,7 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": true,
     "enhance": true,
     "postcss": true,
@@ -12,7 +12,7 @@
     "minified": true,
     "newFeature": false,
     "coverView": true,
-    "nodeModules": false,
+    "nodeModules": true,
     "autoAudits": false,
     "showShadowRootInWxmlPanel": true,
     "scopeDataCheck": false,
@@ -30,6 +30,7 @@
       "disablePlugins": [],
       "outputPath": ""
     },
+    "enableEngineNative": false,
     "useIsolateContext": true,
     "userConfirmedBundleSwitch": false,
     "packNpmManually": false,
@@ -39,7 +40,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.18.0",
-  "appid": "wx251b90fb61f2ac70",
+  "appid": "wx450ed10122f2d5eb",
   "projectname": "airwork-mp",
   "debugOptions": {
     "hidedInDevtools": []

@@ -1,0 +1,6 @@
+
+{
+  "usingComponents": {
+    "card-show": "/components/card-show/card-show"
+  }
+}

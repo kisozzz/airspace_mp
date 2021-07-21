@@ -29,13 +29,17 @@ page {
   --bottomSafe: env(safe-area-inset-bottom);
 
   /* fonts */
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
 
   /* other styles */
   box-sizing: border-box;
 
   /* TEXT */
   font-size: 28rpx;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
 }
 
 .page-footer {
@@ -49,3 +53,4 @@ page {
   background-repeat: no-repeat;
   background-size: cover;
 }
+

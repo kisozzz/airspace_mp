@@ -2,15 +2,18 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/landing/landing",
     "pages/test/test",
+    "pages/space_show/space_show"
+    "pages/landing/landing",
     "pages/form/form"
   ],
-
-  "usingComponents": {
+  "usingComponents":{
+    "l-button":"/miniprogram_npm/lin-ui/button/index",
+    "l-rate":"/miniprogram_npm/lin-ui/rate/index",
+    "btn": "/components/button/button",
     "tabbar": "/components/tabbar/tabbar"
   },
-  
+
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",

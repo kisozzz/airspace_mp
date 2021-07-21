@@ -13,20 +13,14 @@
     "miniprogram": {
       "list": [
         {
-          "name": "test space",
-          "pathName": "pages/test/test",
+          "name": "space show",
+          "pathName": "pages/space_show/space_show",
           "query": "",
           "scene": null
         },
         {
-          "name": "home page",
-          "pathName": "pages/landing/landing",
-          "query": "",
-          "scene": null
-        },
-        {
-          "name": "tab bar",
-          "pathName": "components/tabbar/tabbar",
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
           "query": "",
           "scene": null
         },
@@ -37,7 +31,7 @@
           "scene": null
         },
         {
-          "name": "landiing",
+          "name": "landing",
           "pathName": "pages/landing/landing",
           "query": "",
           "scene": null
