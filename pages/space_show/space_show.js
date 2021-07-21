@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    space: {
+      date: '',
+      num: '',
+      info: '',
+      popup: true
+    }
   },
 
   /**

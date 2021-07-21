@@ -12,6 +12,10 @@
   "usingComponents":{
     "l-button":"/miniprogram_npm/lin-ui/button/index",
     "l-rate":"/miniprogram_npm/lin-ui/rate/index",
+    "l-arc-popup":"/miniprogram_npm/lin-ui/arc-popup/index",
+    "l-form":"/miniprogram_npm/lin-ui/form/index",
+    "l-form-item":"/miniprogram_npm/lin-ui/form-item/index",
+    "l-input":"/miniprogram_npm/lin-ui/input/index",
     "btn": "/components/button/button",
     "tabbar": "/components/tabbar/tabbar",
     "card-space-image": "/components/card-space-image/card-space-image"

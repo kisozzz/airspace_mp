@@ -5,6 +5,6 @@
   <view class="address">123, West Nanjing Rd, Shanghai</view>
   <image src="/images/icons/rmb.svg" class="icon-rmb"></image>
   <view class="fee">15/hour</view>
-  <btn color="red" text="Book Now" class="absolute r0 b0"/>
+  <btn bindtap="openPopup" color="red" text="Book Now" class="absolute r0 b0"/>
   <l-rate score="3" size="30" l-class="absolute l0 b0 pa40 pr20"/>
 </view>
