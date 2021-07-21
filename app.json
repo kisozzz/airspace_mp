@@ -16,6 +16,7 @@
     "l-form":"/miniprogram_npm/lin-ui/form/index",
     "l-form-item":"/miniprogram_npm/lin-ui/form-item/index",
     "l-input":"/miniprogram_npm/lin-ui/input/index",
+    "l-calendar":"/miniprogram_npm/lin-ui/calendar/index",
     "btn": "/components/button/button",
     "tabbar": "/components/tabbar/tabbar",
     "card-space-image": "/components/card-space-image/card-space-image"

@@ -9,7 +9,7 @@ Page({
       date: '',
       num: '',
       info: '',
-      popup: true
+      // popup: true
     }
   },
 

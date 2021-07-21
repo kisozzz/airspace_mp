@@ -1,7 +1,7 @@
 /* pages/space_show/space_show.wxss */
 btn {
-  left: 235px;
-  top: 123px; 
+  left: 470rpx;
+  top: 246rpx; 
 }
 
 card-show {
@@ -21,10 +21,10 @@ card-show {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 24rpx;
+  line-height: 36rpx;
   text-align: justify;
-  letter-spacing: 3px;
+  letter-spacing: 6rpx;
 
   color: #263238;
 }
@@ -33,12 +33,39 @@ card-show {
   font-family: Roboto;
   font-style: normal;
   font-weight: 300;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 24rpx;
+  line-height: 36rpx;
   /* or 150% */
 
   text-align: justify;
 
   color: #263238;
+
+}
+
+.title-form {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35rpx;
+  line-height: 72rpx;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+
+  color: #2C3D63;
+} 
+
+.label {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+
+  letter-spacing: 1px;
+
+  color: #2C3D63;
 
 }

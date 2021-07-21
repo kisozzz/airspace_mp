@@ -19,7 +19,7 @@ Component({
    */
   methods: {
     openPopup() {
-      console.log('pop')
+      this.selectComponent('btn')
     }
   }
 })
