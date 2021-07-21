@@ -1,11 +1,10 @@
 <!--pages/space_show/space_show.wxml-->
 <!-- <image src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180902%2F787ed4e84f05407c9ab0eb8ee6793ae3.jpeg&refer=http%3A%2F%2F5b0988e595225.cdn.sohucs.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1629368352&t=7bd92cb8574780d04090137da17cbadc" class="banner-space flex w100"></image> -->
 <image src="{{space.image_urls[0]}}" class="banner-space flex w100"></image>
-<card-show info="{{space}}" />
+<card-show class="card-info z1" info="{{space}}" />
 <view class="container">
   <view class="title py20">DETAILS</view>
   <view class="content">{{space.description}}</view>
-  <!-- <view class="content">“Gu Defang” on Xiangyang North Road was built in the Republic of China in 1930. It is almost 100 years old, and "good house" is hidden in one of them.The reason for the name "good home" is to hope that there is: a feeling of being at home, after all, "a good home is the reason for being at home".</view> -->
 </view>
 
 

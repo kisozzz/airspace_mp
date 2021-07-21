@@ -22,6 +22,8 @@
 }
 
 .hello {
+  position: relative;
+  /* top: 137px; */
   font-family: Poppins;
   font-style: normal;
   font-weight: 200;

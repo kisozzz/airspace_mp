@@ -1,7 +1,7 @@
 <!--pages/landing/landing.wxml-->
 <view class="body vw vh100">
   <view class="container mauto pa0">
-    <view class="py50 row-end">
+    <view class="pt50 row-end">
       <image src="{{avatar}}" class="avatar-md bg-grey"></image>
     </view>
     <view class="hello fbody mb20">Hello User</view>
