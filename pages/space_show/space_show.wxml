@@ -25,7 +25,7 @@
 
 
       <view slot="submit">
-          <btn>Submit</btn>
+          <btn text="Submit" color="red" />
       </view>
   </l-form>
   </view>
