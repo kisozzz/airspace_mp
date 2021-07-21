@@ -23,7 +23,7 @@
   <!-- swiper -->
   <view class="mt60 mb60">
     <swiper class="index-swiper" indicator-dots="{{indicatorDots}}">
-      <block wx:for="{{cards}}" wx:key="index">
+      <block wx:for="{{cardsBackup}}" wx:key="index">
         <swiper-item class="swiper-card">
           <card-space-image info="{{item}}" />
         </swiper-item>
