@@ -1,5 +1,6 @@
 /* components/button/button.wxss */
-@import '/app'
+@import '/app';
+
 .button-red {
   display: flex;
   justify-content: center;
