@@ -1,25 +1,25 @@
 <!--pages/components/card.wxml-->
 <view class="card w90 pa20 mauto rounded bg-white shadow">
-  <view class="card-img mauto w100 h100 bg-grey rounded">
-    <view class="">img</view>
+  <view class="card-img mauto w100 h100 bg-grey rounded ofh">
+    <image class="h100 w100 bg-grey" src="{{info.image_url}}" mode="aspectFill"></image>
   </view>
 
   <view class="ml30 relative flex column justify-between">
-    <view>
+    <view class="flex column">
       <view class="w100 row-between">
-        <view class="f36">Space 1</view>
-        <view>stars stars stars</view>
+        <view class="f32">{{info.title}}</view>
+        <view>stars stars</view>
       </view>
-      <view class="f28 mt20">Space address</view>
+      <view class="f24 mt20 opacity7">{{info.address}}</view>
     </view>
 
     <view class="flex">
-      <view>Kitchen</view>
-      <view class="ml20">20Y</view>
+      <view class="f24 opacity7">{{info.category}}</view>
+      <view class="f24 ml20 opacity7">{{info.price}}¥</view>
     </view>
     <view class="flex absolute b0 r0">
-      <view class="red">Edit</view>
-      <view class="red ml20">Delete</view>
+      <view class="red-text">Edit</view>
+      <view class="red-text ml20">Delete</view>
     </view>
   </view>
 </view>
