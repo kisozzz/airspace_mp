@@ -89,7 +89,12 @@
   left: 50rpx;
 }
 
-l-rate {
-  top: 10px;
-  display: flex;
-}
+/* .rating {
+  position:absolute;
+  right: 0;
+  bottom: 0;
+  /* display: flex;
+  justify-content: center; 
+}*/
+
+
