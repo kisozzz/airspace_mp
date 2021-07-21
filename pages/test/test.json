@@ -2,6 +2,7 @@
   "usingComponents": {
     "card-space": "/components/card-space/card-space",
     "card-space-image": "/components/card-space-image/card-space-image",
-    "card-request": "/components/card-request/card-request"
+    "card-request": "/components/card-request/card-request",
+    "button": "/components/button/button"
   }
 }

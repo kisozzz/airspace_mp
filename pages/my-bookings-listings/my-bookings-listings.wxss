@@ -1,0 +1,8 @@
+/* pages/my-bookings-listings/my-bookings-listings.wxss */
+.body-bg-color {
+  background-color: #FAFAFF;
+}
+
+.red-text {
+  color: #FF7162;
+}
