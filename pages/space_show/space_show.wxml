@@ -6,25 +6,29 @@
   <view class="content">“Gu Defang” on Xiangyang North Road was built in the Republic of China in 1930. It is almost 100 years old, and "good house" is hidden in one of them.The reason for the name "good home" is to hope that there is: a feeling of being at home, after all, "a good home is the reason for being at home".</view>
 </view>
 
-<l-arc-popup show="{{true}}" max-height="600" min-height="200">
-  <view style="height: 1500rpx;">
 
+<l-arc-popup show="{{true}}" max-height="650" min-height="200">
+  <view style="height: 800rpx;">
+<!-- form -->
+  <view class="container-form pa30">
+    <view class="title-form pb20">Book Space</view>
+    <l-form name="space" l-form-btn-class="l-form-btn-class" bind:linsubmit="submit">
+        <l-form-item label="Date" name="date" class="label">
+            <!-- <l-calendar show="{{ true }}" type="range" color="#f60"/> -->
+            <l-input id="date" value="{{space.date}}" hide-label show-row="{{false}}"/>
+            
+        </l-form-item>
 
-<l-form name="student" l-form-btn-class="l-form-btn-class" bind:linsubmit="submit">
-    <l-form-item label="Date:" name="date">
-        <l-input id="date" value="{{space.date}}" hide-label show-row="{{false}}"/>
-    </l-form-item>
+        <l-form-item label="Number of People" name="num" class="label">
+            <l-input id="num" value="{{space.num}}" hide-label show-row="{{false}}"/>
+        </l-form-item>
 
-    <l-form-item label="Number of People:" name="num">
-        <l-input id="num" value="{{space.num}}" hide-label show-row="{{false}}"/>
-    </l-form-item>
+        <l-form-item label="Additional Info" name="info" class="label">
+            <l-input id="info" value="{{space.info}}" hide-label show-row="{{false}}"/>
+        </l-form-item>
 
-    <l-form-item label="Additional Info:" name="info">
-        <l-input id="info" value="{{space.info}}" hide-label show-row="{{false}}"/>
-    </l-form-item>
-
-    <btn color="red" text="Submit" />
-</l-form>
-
+        <btn color="red" text="Submit" />
+    </l-form>
+  </view>
   </view>
 </l-arc-popup>
