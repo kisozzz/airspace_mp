@@ -80,7 +80,7 @@ Page({
       }
     });
     wx.request({
-      url: `http://localhost:3000/api/v1/space/${space_id}/reviews`,
+      url: `https://airspace-api.herokuapp.com/api/v1/space/${space_id}/reviews`,
       method: "GET",
       success(res) {
         const reviews = res.data;
