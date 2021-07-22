@@ -2,7 +2,7 @@
 <view class="body-bg-color vh100 vw100">
 <view>
 
-  <view wx:if="{{spaces.length}}" class="tab py100">
+  <view wx:if="{{!spaces.length}}" class="tab py100">
       <view bindtap="showSpaces" class="tabspaces fsheader {{currentTab=='spaces'?'tab-selected':''}}">My Spaces</view>
       <view bindtap="showBookings" class="tabbookings fsheader {{currentTab=='bookings'?'tab-selected':''}}">My Bookings</view>
   </view>
