@@ -22,19 +22,11 @@ Page({
         method: "GET",
         success(res) {
           const bookings = res.data.bookings
-          const spaces = []
-          bookings.forEach((booking) => {
-            spaces.push(booking.space)
-          })
-          console.log(spaces)
-          console.log(bookings)
           page.setData({
-            spaces: spaces,
             bookings: bookings
           });
         }
       })
-    
   },
 
   /**
