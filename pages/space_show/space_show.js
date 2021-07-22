@@ -78,8 +78,18 @@ Page({
           space: space
         });
       }
+    });
+    wx.request({
+      url: `http://localhost:3000/api/v1/space/${space_id}/reviews`,
+      method: "GET",
+      success(res) {
+        const reviews = res.data;
+        console.log(reviews);
+        page.setData({
+          reviews: reviews.reviews
+        });
+      }
     })
-    
   },
 
   /**
