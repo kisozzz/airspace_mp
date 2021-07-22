@@ -27,13 +27,14 @@
             <l-input id="price" value="{{space.price}}" hide-label show-row="{{false}}"/>
         </l-form-item>
 
-        <l-form-item label="Uplaod images" name="image" class="label">
-        </l-form-item>
-        <l-image-picker count="9" bind:linchange="onChangeTap" />
-        <l-form-item label="Description" name="description" class="label">
-        </l-form-item>
-        <l-textarea id="description" value="{{space.description}}" auto-height="{{true}}" border="{{false}}" maxlength="600" placeholder="Introduce your space..." />
-
+        <!-- <l-form-item label="Uplaod images" name="image" class="label">
+        </l-form-item> -->
+      
+        <view class="description">
+          <!-- <textarea class="content">Description</textarea> -->
+          <l-textarea id="description" value="{{description}}" bind:lininput="handleTextInput" auto-height="{{true}}" border="{{false}}" maxlength="600" placeholder="Describe your space..."/>
+          <l-image-picker count="9" size="4" bind:linchange="handleChooseImg" />
+        </view>
         <btn bindtap="createSpace" color="red" text="Submit" class="pa20"/>
     </l-form>
   </view>

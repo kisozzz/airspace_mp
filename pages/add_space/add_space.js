@@ -34,8 +34,12 @@ Page({
       image_url: '',
       description: ''
     },
-  },
 
+    chooseImgs: [],
+    textValue: ''
+
+  },
+  uploadImgs: [],
   submit(event){
     const {detail} = event;
   },
@@ -47,6 +51,19 @@ Page({
     })
   },
 
+  handleChooseImg: function(e) {
+    console.log(e.detail)
+    this.setData({
+      chooseImgs: [...this.data.chooseImgs,...e.detail.all]
+    })
+  },
+
+  handleTextInput(e){
+    this.setData({
+      description:e.detail.value
+    })
+  },
+
   createSpace() {
     const space_id = this.data.id;
     const user_id = 1;
@@ -55,7 +72,7 @@ Page({
     const city = 'shanghai';
     const address = 'shanghai';
     const price = '200';
-    const description = 'nice space';
+    const {description, chooseImgs} = this.data;
     let space = {
       space_id: space_id,
       user_id: user_id,
@@ -66,9 +83,25 @@ Page({
       price: price,
       description: description
     }
+    chooseImgs.forEach((v,i)=>{
+      wx.uploadFile({
+        filePath: v,
+        name: 'image',
+        url: 'img.coolcr.cn/index/api.html',
+        formData: {},
+        header: {},
+        timeout: 0,
+        success: (result) => {
+          console.log(result)
+          let url = JSON.parse(result.data).url;
+          this.uploadImgs.push(url);
+          console.log(this.uploadImgs);
+        },
+      });
+    }),
     wx.request({
-    //  url: 'https://airspace-api.herokuapp.com/api/v1/spaces',
-     url: 'http://localhost:3000/api/v1/spaces',
+     url: 'https://airspace-api.herokuapp.com/api/v1/spaces',
+    //  url: 'http://localhost:3000/api/v1/spaces',
      method: 'POST',
      data: { space: space },
      success(res) {
@@ -79,6 +112,7 @@ Page({
       }
     })
   },
+
   /**
    * Lifecycle function--Called when page load
    */
@@ -87,7 +121,8 @@ Page({
 
     const page = this;
     wx.request({
-      url: 'http://localhost:3000/api/v1/spaces',
+      url: 'https://airspace-api.herokuapp.com/api/v1/spaces',
+      // url: 'http://localhost:3000/api/v1/spaces',
       method: "GET",
       success(res) {
         const space = res.data;
