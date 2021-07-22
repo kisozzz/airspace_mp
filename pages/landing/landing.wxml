@@ -1,4 +1,3 @@
-<!--pages/landing/landing.wxml-->
 <view class="body vw vh100">
   <view class="container mauto pa0">
     <view class="pt50 row-end">
@@ -7,35 +6,28 @@
     <view class="hello fbody mb20">Hello User</view>
     <view class="findtext ftheader">Find your space</view>
 
-
-      <!-- <form bindsubmit="formSubmit">
-      <view>Name</view>
-      <input name="name" />
-      <view>Content</view>
-      <input name="text" />
-      <button form-type="submit">Submit</button>
-    </form> -->
+  <!-- search bar -->
     <form bindsubmit="searchSpaces">
     <view class="search w100 bg-white py20 radius50 my50">
       <view class="mx20 flex items-center pl20">
-        <button form-type="submit"><image src="/images/icons/spotlight.svg" class="search-image" /></button>
+        <button class="search-btn" form-type="submit"><image class="" src="/images/icons/spotlight.svg" class="search-image" /></button>
         <view class="ml20">
-            <input name="query" placeholder="Search for a space"/>
+            <input class="search-input" name="query" placeholder="Search for a space"/>
         </view>
       </view>
     </view>
   </form>
 
+<!-- popular and top spaces tabs -->
     <view class="choices flex">
       <view class="tapp fbody">Popular</view>
       <view class="tapt mx60 fbody">Top Spaces</view>
     </view>
   </view>
 
-  <!-- swiper -->
+<!-- swiper -->
   <view class="mt60 mb60 ml20">
     <swiper class="index-swiper" indicator-dots="{{indicatorDots}}">
-
       <block wx:if="{{spaces}}">
         <block wx:for="{{spaces}}" wx:key="index">
           <swiper-item class="swiper-card">
@@ -43,7 +35,6 @@
           </swiper-item>
         </block>
       </block>
-
       <block wx:if="{{!spaces}}">
         <block wx:for="{{spacesBackup}}" wx:key="index">
           <swiper-item class="swiper-card">
@@ -51,7 +42,6 @@
           </swiper-item>
         </block>
       </block>
-      
     </swiper>
   </view>
   <tabbar/>
