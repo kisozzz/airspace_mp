@@ -17,7 +17,21 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    console.log(options);
+    const page = this;
+    const query = options.query;
+      wx.request({
+        url: `https://airspace-api.herokuapp.com/api/v1/spaces?query=${query}`,
+        method: "GET",
+        success(res) {
+          const spaces = res.data.spaces;
+          // console.log(spaces);
+          page.setData({
+            spaces: spaces
+          });
+        }
+      })
+    
   },
 
   /**

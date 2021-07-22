@@ -8,6 +8,7 @@ App({
     // 登录
     const that = this
     wx.login({
+      // console.log('logging in'),
       success: res => {
         console.log(res)
         wx.request({
