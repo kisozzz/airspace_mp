@@ -14,7 +14,21 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+    const space_id = options.id || 1
+    const page = this;
+    wx.request({
+      url: `http://localhost:3000/api/v1/spaces/${space_id}`,
+      method: "GET",
+      success(res) {
+        const space = res.data
+        const bookings = res.data.bookings
+        console.log(bookings)
+        page.setData({
+          space: space,
+          bookings: bookings
+        });
+      }
+    });
   },
 
   /**
