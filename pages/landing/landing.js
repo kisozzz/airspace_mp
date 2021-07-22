@@ -17,10 +17,12 @@
       })
     },
 
-    methods: {
-      navigateToShow() {
-        console.log('dd')
-      }
+    searchSpaces(e) {
+      console.log(e.detail.value.query)
+      const query = e.detail.value.query
+      wx.navigateTo({
+        url: `/pages/search/search?query=${query}`,
+      })
     },
 
     onLoad: function (options) {

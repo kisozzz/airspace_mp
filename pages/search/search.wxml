@@ -1,9 +1,9 @@
 <!--pages/search/search.wxml-->
 <view class="body vw vh100">
   <view class="mx30">
-    <view class="py40 f40 pl search-text medium">Found 4 spaces</view>
+    <view class="py40 f40 pl search-text medium">Found {{spaces.length}} spaces</view>
     <view class='search-results'>
-      <block wx:for="{{cards}}" wx:key="index">
+      <block wx:for="{{spaces}}" wx:key="index">
           <card-space-image info="{{item}}" class="mt20" />
       </block>
     </view>

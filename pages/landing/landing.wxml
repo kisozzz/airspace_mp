@@ -6,14 +6,26 @@
     </view>
     <view class="hello fbody mb20">Hello User</view>
     <view class="findtext ftheader">Find your space</view>
+
+
+      <!-- <form bindsubmit="formSubmit">
+      <view>Name</view>
+      <input name="name" />
+      <view>Content</view>
+      <input name="text" />
+      <button form-type="submit">Submit</button>
+    </form> -->
+    <form bindsubmit="searchSpaces">
     <view class="search w100 bg-white py20 radius50 my50">
       <view class="mx20 flex items-center pl20">
-        <image src="/images/icons/spotlight.svg" class="search-image"></image>
+        <button form-type="submit"><image src="/images/icons/spotlight.svg" class="search-image" /></button>
         <view class="ml20">
-          <input placeholder="Search for a space"/>
+            <input name="query" placeholder="Search for a space"/>
         </view>
       </view>
     </view>
+  </form>
+
     <view class="choices flex">
       <view class="tapp fbody">Popular</view>
       <view class="tapt mx60 fbody">Top Spaces</view>
