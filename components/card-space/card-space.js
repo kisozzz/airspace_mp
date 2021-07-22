@@ -4,7 +4,8 @@ Component({
    * Component properties
    */
   properties: {
-      booking: Object
+      booking: Object,
+      space: Object
   },
 
   /**

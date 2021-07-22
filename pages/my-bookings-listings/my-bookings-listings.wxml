@@ -1,10 +1,15 @@
 <!--pages/my-bookings-listings/my-bookings-listings.wxml-->
 <view class="body-bg-color vh100 vw100">
+<view>
 
-  <view class="py100">
-    <view class="text-center bold fsheader red-text">My Bookings</view>
+  <view wx:if="{{spaces.length}}" class="tab py100">
+      <view bindtap="showSpaces" class="tabspaces fsheader {{currentTab=='spaces'?'tab-selected':''}}">My Spaces</view>
+      <view bindtap="showBookings" class="tabbookings fsheader {{currentTab=='bookings'?'tab-selected':''}}">My Bookings</view>
   </view>
-  <view>
+
+</view>
+
+  <view wx:if="{{currentTab=='bookings'}}">
     <block wx:for="{{bookings}}" wx:for-item="booking" wx:key="index">
       <view class="mb20">
         <card-space info="{{item}}" booking="{{booking}}" />
@@ -12,6 +17,14 @@
     </block>
     <view class="text-center" wx:if="{{bookings.length === 0}}">You don't currently have any bookings
     </view> 
+  </view>
+
+  <view wx:if="{{currentTab=='spaces'}}">
+    <block wx:for="{{spaces}}" wx:for-item="spaces" wx:key="index">
+      <view class="mb20">
+        <card-space info="{{item}}" space="{{space}}" />
+      </view>
+    </block>
   </view>
 
   <tabbar />

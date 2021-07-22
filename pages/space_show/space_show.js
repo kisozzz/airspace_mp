@@ -44,20 +44,6 @@ Page({
         });
       }
     })
-
-    // // Post data to API
-    // wx.request({
-    //   // POST /api/v1/spaces/:space_id/bookings
-    //   url: `http://localhost:3000/api/v1/stories/${story_id}/comments`,
-    //   method: 'POST',
-    //   data: {comment: comment},
-    //   success() {
-    //     // redirect when done
-    //     wx.redirectTo({
-    //       url: `/pages/story/story?id=${story_id}`
-    //     });
-    //   }
-    // });
   },
 
   /**

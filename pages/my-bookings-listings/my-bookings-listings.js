@@ -5,12 +5,21 @@ Page({
    * Page initial data
    */
   data: {
+    currentTab:"bookings",
+
     bookingsBackup: [
       { title: "Cozy Kitchen", city: "Beijing", price: 500, address: "50 Beiluoguxiang", category: 'kitchen', rating: 3, image_url: "https://images.unsplash.com/photo-1600607686527-6fb886090705?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=675&ixid=MnwxfDB8MXxyYW5kb218MHx8aW50ZXJpb3J8fHx8fHwxNjI2Njc2MDU4&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1200" },
       { title: 'Open Workspace', city: 'Shanghai', price: 600, address: '100 West Nanjing Rd.', category: 'workspace', rating: 4, image_url: "https://images.unsplash.com/photo-1519642918688-7e43b19245d8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=675&ixid=MnwxfDB8MXxyYW5kb218MHx8aW50ZXJpb3J8fHx8fHwxNjI2Njc2MTA2&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1200"}
     ]
   },
 
+  showSpaces() {
+    this.setData({ currentTab: 'spaces' })
+  },
+
+  showBookings() {
+    this.setData({ currentTab: 'bookings' })
+  },
   /**
    * Lifecycle function--Called when page load
    */
@@ -24,6 +33,18 @@ Page({
           const bookings = res.data.bookings
           page.setData({
             bookings: bookings
+          });
+        }
+      })
+
+      wx.request({
+        // url: `https://airspace-api.herokuapp.com/api/v1/spaces/user/${userID}`,
+        url: 'http://localhost:3000/api/v1/spaces',
+        method: "GET",
+        success(res) {
+          const spaces = res.data.spaces
+          page.setData({
+            spaces: spaces
           });
         }
       })
