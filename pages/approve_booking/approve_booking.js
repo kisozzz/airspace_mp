@@ -5,9 +5,29 @@ Page({
    * Page initial data
    */
   data: {
-    cards: [
-      { title: "Gathering Space", city: "Shanghai", image_url: "https://images.unsplash.com/photo-1592247350271-c5efb34dd967?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=675&ixid=MnwxfDB8MXxyYW5kb218MHx8aW50ZXJpb3J8fHx8fHwxNjI2Njc1OTY3&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1200" }
-    ]
+
+  },
+
+  approve() {
+    this.data.booking.owner_response = true
+    this.data.booking.confirmed = true
+    console.log(this.data.booking.owner_response)
+    console.log(this.data.booking.confirmed)
+    wx.navigateTo({
+      url: `../../pages/manage_space/manage_space?id=${this.data.booking.space_id}`,
+    })
+  },
+
+  deny() {
+    // call api,
+    // get response and replace booking data
+    this.data.booking.owner_response = true
+    this.data.booking.confirmed = false
+    console.log(this.data.booking.owner_response)
+    console.log(this.data.booking.confirmed)
+    wx.navigateTo({
+      url: `../../pages/manage_space/manage_space?id=${this.data.booking.space_id}`,
+    })
   },
 
   /**
@@ -16,7 +36,7 @@ Page({
   onLoad: function (options) {
     const page = this
     wx.request ({
-      url: 'http://localhost:3000/api/v1/bookings/1',
+      url: `http://localhost:3000/api/v1/bookings/${page.options.id}`,
       method: 'GET',
       success(res) {
         const booking = res.data

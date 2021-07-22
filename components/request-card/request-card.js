@@ -14,10 +14,15 @@ Component({
 
   },
 
+  
   /**
    * Component methods
    */
   methods: {
-
+    goToRequest() {
+      wx.navigateTo({
+        url: `../../pages/approve_booking/approve_booking?id=${this.data.booking.id}`,
+      })
+    },
   }
 })
