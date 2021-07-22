@@ -1,0 +1,39 @@
+<view class="body vw vh100"> 
+  <view class="container mauto pa0">
+    <view class="title f48 py40">Add your space</view>
+    <l-form name="add_space" l-form-btn-class="l-form-btn-class" bind:linsubmit="submit">
+        <l-form-item label="Title" name="title" class="label">
+            <l-input id="title" value="{{booking_form.date}}" hide-label show-row="{{false}}"/>
+        </l-form-item>
+
+        <l-form-item label="Type" name="type" class="label">
+            <l-input id="type" value="{{booking_form.num}}" hide-label show-row="{{false}}"/>
+        </l-form-item>
+
+        <l-form-item label="City" name="city" class="label">
+            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+              <view class="picker">
+                <l-input id="city" value="{{array[index]}}" hide-label show-row="{{false}}"/>
+              </view>
+            </picker>
+        </l-form-item>
+
+        <l-form-item label="Address" name="address" class="label">
+            <l-input id="address" value="{{booking_form.info}}" hide-label show-row="{{false}}"/>
+        </l-form-item>
+
+        <l-form-item label="Price per hour" name="price" class="label">
+            <l-input id="price" value="{{booking_form.info}}" hide-label show-row="{{false}}"/>
+        </l-form-item>
+
+        <l-form-item label="Uplaod images" name="image" class="label">
+        </l-form-item>
+        <l-image-picker count="9" bind:linchange="onChangeTap" />
+        <l-form-item label="Description" name="description" class="label">
+        </l-form-item>
+        <l-textarea id="description" value="{{booking_form.info}}" auto-height="{{true}}" border="{{false}}" maxlength="600" placeholder="Introduce your space..." />
+
+        <btn bindtap="createBooking" color="red" text="Submit" class="pa20"/>
+    </l-form>
+  </view>
+</view>
