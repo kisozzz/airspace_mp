@@ -6,3 +6,34 @@
 .red-text {
   color: #FF7162;
 }
+
+.tab {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.tabspaces {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #C4C4C4;
+  padding-right: 35rpx;
+}
+
+.tab-selected {
+  color: #FF7162 !important;
+}
+
+.tabbookings{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #C4C4C4;
+  padding-left: 35rpx;
+}

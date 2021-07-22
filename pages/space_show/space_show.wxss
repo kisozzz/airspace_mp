@@ -17,9 +17,6 @@ btn {
   
   /* bottom: 700rpx; */
 }
-.banner-space {
-
-}
 
 .container {
   display: flex;
