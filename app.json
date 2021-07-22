@@ -5,7 +5,7 @@
     "pages/test/test",
     "pages/space_show/space_show",
     "pages/index/index",
-
+    "pages/review_form/review_form",
     "pages/my-bookings-listings/my-bookings-listings",
     "pages/add_space/add_space",
     "pages/search/search",

@@ -25,17 +25,17 @@
   </view>
 </view>
 
-<!-- create space -->
-<view class="card w90 pa20 mauto rounded bg-white shadow">
+
+<!-- <view class="card w90 pa20 mauto rounded bg-white shadow">
   <view class="card-img mauto w100 h100 bg-grey rounded ofh">
-    <!-- <image class="h100 w100 bg-grey" src="{{booking.space.image_urls[0]}}" mode="aspectFill"></image> -->
+    <image class="h100 w100 bg-grey" src="{{space.image_urls[0]}}" mode="aspectFill"></image>
   </view>
 
   <view class="ml30 relative flex column justify-between">
     <view class="flex column">
       <view class="w100 row-between">
         <view class="f30">{{space.title}}</view>
-        <!-- <l-rate score="{{info.rating}}" size="22" l-class="" active-color="#E9C501" inActive-color="#F3ECC6"/> -->
+        <l-rate score="{{info.rating}}" size="22" l-class="" active-color="#E9C501" inActive-color="#F3ECC6"/>
       </view>
       <view class="f24 mt20 opacity7">{{space.city}}</view>
     </view>
@@ -49,4 +49,4 @@
       <view bindtap="deleteBooking" class="red-text ml20">Cancel</view>
     </view>
   </view>
-</view>
+</view> -->
