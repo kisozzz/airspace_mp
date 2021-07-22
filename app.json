@@ -7,7 +7,7 @@
     "pages/index/index",
 
     "pages/my-bookings-listings/my-bookings-listings",
-    "pages/form/form",
+    "pages/add_space/add_space",
     "pages/search/search",
     "pages/manage_space/manage_space",
     "pages/approve_booking/approve_booking"
@@ -20,6 +20,8 @@
     "l-form-item":"/miniprogram_npm/lin-ui/form-item/index",
     "l-input":"/miniprogram_npm/lin-ui/input/index",
     "l-calendar":"/miniprogram_npm/lin-ui/calendar/index",
+    "l-textarea":"/miniprogram_npm/lin-ui/textarea/index",
+    "l-image-picker":"/miniprogram_npm/lin-ui/image-picker/index",
     "btn": "/components/button/button",
     "tabbar": "/components/tabbar/tabbar",
     "card-space-image": "/components/card-space-image/card-space-image",
