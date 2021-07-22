@@ -1,11 +1,13 @@
 <view class ="w100 bg-grey image-container">
-  <image class="h100 w100 card-image" mode="aspectFill" src="{{cards[0].image_url}}"></image>
+  <image class="h100 w100 card-image" mode="aspectFill" src="{{space.image_urls[0]}}"></image>
 </view>
 <scroll-view scroll-y style="height: 680px;"> 
   <view class="header-text f36" id="requests">Requests</view>
-    <request-card/>
-    <request-card/>
-    <request-card/>
+    <block wx:for="{{bookings}}" wx:for-item="booking" wx:key="index">
+      <view wx:if="{{booking.owner_response === false}}">
+        <request-card booking="{{booking}}"/>
+      </view>
+    </block>
   <view class="header-text f36">Past bookings</view>
     <request-card/>
     <request-card/>

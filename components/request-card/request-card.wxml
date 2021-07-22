@@ -1,13 +1,13 @@
 <view class="card row-between w90 mauto my20">
   <view class="user flex items-center mx20">
     <view class="avatar-md bg-black"></view>
-    <view class="mx20">Qixi</view>
+    <view class="mx20">{{booking.user.first_name}}</view>
   </view>
   <view class="info">
-    <view class="mx20">2021-7-28 to 2021-7-30</view>
+    <view class="mx20">{{booking.start_date}} to {{booking.end_date}}</view>
     <view class="people row-end mx20">
       <image src="/images/icons/people.svg" class="icon"></image>
-      <view>4</view>
+      <view>{{booking.number_of_people}}</view>
     </view>
   </view>
 </view>

@@ -3,13 +3,13 @@
 </view>
 <view class="header-text f36" id="requests">Request info</view>
   <view class="w80 mauto f32 mt20">Name:</view>
-  <view class="bb w80 mauto mb50 f28">Qixi Zhang</view>
+  <view class="bb w80 mauto mb50 f28">{{booking.user.first_name}}</view>
   <view class="w80 mauto f32">People:</view>
-  <view class="bb w80 mauto mb50 f28">4 People</view>
+  <view class="bb w80 mauto mb50 f28">{{booking.number_of_people}}</view>
   <view class="w80 mauto f32">Date:</view>
-  <view class="bb w80 mauto mb50 f28">2021-7-28 to 2021-8-1</view>
+  <view class="bb w80 mauto mb50 f28">{{booking.start_date}} to {{booking.end_date}}</view>
   <view class="w80 mauto f32">Additional info:</view>
-  <view class="bb w80 mauto mb50 f28">Can I brings dogs?</view>
+  <view class="bb w80 mauto mb50 f28">{{booking.additional_info}}</view>
   <view class="w80 row-around mauto">
     <view>
       <btn color="red" text="Approve"/>
