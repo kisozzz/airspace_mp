@@ -12,10 +12,10 @@
   <view class="bb w80 mauto mb50 f28">{{booking.additional_info}}</view>
   <view class="w80 row-around mauto">
     <view>
-      <btn color="red" text="Approve"/>
+      <btn color="red" text="Approve" bindtap="approve"/>
     </view>
     <view>
-      <btn color="grey" text="Deny"/>
+      <btn color="grey" text="Deny" bindtap="deny"/>
     </view>
   </view>
 <tabbar/>

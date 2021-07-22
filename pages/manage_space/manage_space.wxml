@@ -9,8 +9,11 @@
       </view>
     </block>
   <view class="header-text f36">Past bookings</view>
-    <request-card/>
-    <request-card/>
+    <block wx:for="{{bookings}}" wx:for-item="booking" wx:key="index">
+      <view wx:if="{{booking.owner_response === true}}">
+        <request-card booking="{{booking}}"/>
+      </view>
+    </block>
     <view class="mt40">
       <btn color="red" text="Edit Space"/>
     </view>

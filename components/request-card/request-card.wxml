@@ -1,4 +1,4 @@
-<view class="card row-between w90 mauto my20">
+<view class="card row-between w90 mauto my20"  bindtap="goToRequest">
   <view class="user flex items-center mx20">
     <view class="avatar-md bg-black"></view>
     <view class="mx20">{{booking.user.first_name}}</view>
