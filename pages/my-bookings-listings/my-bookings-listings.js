@@ -38,8 +38,8 @@ Page({
       })
 
       wx.request({
-        // url: `https://airspace-api.herokuapp.com/api/v1/spaces/user/${userID}`,
-        url: 'http://localhost:3000/api/v1/spaces',
+        url: `https://airspace-api.herokuapp.com/api/v1/spaces/user/${userID}`,
+        // url: 'http://localhost:3000/api/v1/spaces',
         method: "GET",
         success(res) {
           const spaces = res.data.spaces
