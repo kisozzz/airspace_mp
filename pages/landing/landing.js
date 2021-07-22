@@ -30,7 +30,7 @@
         method: "GET",
         success(res) {
           const spaces = res.data.spaces;
-          console.log(spaces);
+          // console.log(spaces);
           page.setData({
             spaces: spaces
           });
