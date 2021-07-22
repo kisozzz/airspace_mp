@@ -23,7 +23,8 @@
     "btn": "/components/button/button",
     "tabbar": "/components/tabbar/tabbar",
     "card-space-image": "/components/card-space-image/card-space-image",
-    "request-card": "/components/request-card/request-card"
+    "request-card": "/components/request-card/request-card",
+    "review-card": "/components/review-card/review-card"
   },
 
   "window": {

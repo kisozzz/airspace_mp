@@ -1,0 +1,10 @@
+/* components/request-card.wxss */
+@import '/app';
+.card {
+  border-radius: 8px;
+}
+
+.border {
+  width: 95%;
+  border-bottom: solid 1px #DDDDDD;
+}
