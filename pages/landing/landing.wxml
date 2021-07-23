@@ -52,7 +52,7 @@
   <view class="container mauto pa0 mb40">
     <view class="findtext ftheader">Explore</view>
   </view>
-  <view class="spaces-grid">
+  <view class="spaces-grid mb200">
     <block wx:if="{{spaces}}">
         <block wx:for="{{spaces}}" wx:key="index">
             <card-space-image info="{{item}}" />

@@ -1,8 +1,16 @@
 /* pages/search/search.wxss */
-.search-results {
+/* .search-results {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 20rpx;
+  gap: 5rpx;
+} */
+
+.search-results {
+  display: grid;
+  gap: 20rpx 5rpx;
+  grid-template-columns: 1fr 1fr;
+  width: 98%;
+  margin: 0 auto;
 }
 
 .body {
