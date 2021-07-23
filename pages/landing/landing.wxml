@@ -1,10 +1,12 @@
 <view class="body vw vh100">
   <view class="container mauto pa0">
-    <view class="pt50 row-end">
-      <image src="{{avatar}}" class="avatar-md bg-grey"></image>
+    <view class="flex column relative pt100">
+      <view class="absolute t0 r0 pt60">
+        <image src="{{avatar}}" class="avatar-md bg-grey"></image>
+      </view>
+      <view class="hello fbody mb20">Hello User</view>
+      <view class="findtext ftheader">Find your space</view>
     </view>
-    <view class="hello fbody mb20">Hello User</view>
-    <view class="findtext ftheader">Find your space</view>
 
   <!-- search bar -->
     <form bindsubmit="searchSpaces">
