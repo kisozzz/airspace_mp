@@ -4,7 +4,7 @@ Component({
    * Component properties
    */
   properties: {
-      booking: Object
+      space: Object
   },
 
   /**
@@ -17,6 +17,7 @@ Component({
   /**
    * Component methods
    */
+  // NEED TO REDO FOR MY SPACES
   methods: {
     deleteBooking() {
       // console.log('connected');
