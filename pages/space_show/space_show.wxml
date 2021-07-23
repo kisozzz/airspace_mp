@@ -2,7 +2,7 @@
 <image src="{{space.image_urls[0]}}" class="banner-space flex w100"></image>
 <card-show class="card-info z1" info="{{space}}" />
 <view class="container">
-  <view class="title py20">DETAILS</view>
+  <view class="title py20 mt20">DETAILS</view>
   <view class="content">Type: {{space.category}} space</view>
   <view class="content pt20">{{space.description}}</view>
 </view>
