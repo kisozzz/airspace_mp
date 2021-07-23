@@ -2,19 +2,23 @@
   <view class="container mauto pa0">
     <view class="title f48 py40">Add your space</view>
 
-    <l-form name="space" l-form-btn-class="l-form-btn-class" bind:linsubmit="submit">
+    <l-form name="space" l-form-btn-class="l-form-btn-class" bind:linsubmit="submitSpace">
         <l-form-item label="Title" name="title" class="label">
             <l-input id="title" value="{{space.title}}" hide-label show-row="{{false}}"/>
         </l-form-item>
 
         <l-form-item label="Type" name="type" class="label">
-            <l-input id="type" value="{{space.category}}" hide-label show-row="{{false}}"/>
+          <picker bindchange="bindPickerChangeType" value="{{typeIndex}}" range="{{typeArray}}">
+              <view class="picker">
+                <l-input id="type" value="{{typeArray[typeIndex]}}" hide-label show-row="{{false}}"/>
+              </view>
+            </picker>
         </l-form-item>
 
         <l-form-item label="City" name="city" class="label">
-            <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <picker bindchange="bindPickerChangeCity" value="{{cityIndex}}" range="{{cityArray}}">
               <view class="picker">
-                <l-input id="city" value="{{array[index]}}" hide-label show-row="{{false}}"/>
+                <l-input id="city" value="{{cityArray[cityIndex]}}" hide-label show-row="{{false}}"/>
               </view>
             </picker>
         </l-form-item>
@@ -26,16 +30,13 @@
         <l-form-item label="Price per hour" name="price" class="label">
             <l-input id="price" value="{{space.price}}" hide-label show-row="{{false}}"/>
         </l-form-item>
-
-        <!-- <l-form-item label="Uplaod images" name="image" class="label">
-        </l-form-item> -->
-      
         <view class="description">
-          <!-- <textarea class="content">Description</textarea> -->
           <l-textarea id="description" value="{{description}}" bind:lininput="handleTextInput" auto-height="{{true}}" border="{{false}}" maxlength="600" placeholder="Describe your space..."/>
           <l-image-picker count="9" size="4" bind:linchange="handleChooseImg" />
         </view>
-        <btn bindtap="createSpace" color="red" text="Submit" class="pa20"/>
+        <view slot="submit">
+          <btn color="red" text="Submit" class="pa20"/>
+        </view>
     </l-form>
   </view>
 </view>
