@@ -4,9 +4,13 @@
 <view class="container">
   <view class="title py20">DETAILS</view>
   <view class="content">{{space.description}}</view>
-  
-  <view class="mb100">
-    <view class="title mt40">REVIEWS</view>
+
+
+  <view class="review-bar flex items-center mb100">
+    <view class="title pt50">REVIEWS</view>
+    <navigator url="/pages/review_form/review_form?id={{space.id}}"><image src="/images/icons/add.svg" class="add-icon pl20 relative"></image></navigator>
+  </view>
+  <view>
     <block wx:for="{{reviews}}" wx:for-item="review" wx:key="index">
       <view class="mb20">
         <review-card review="{{review}}"/>

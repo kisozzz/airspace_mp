@@ -3,7 +3,7 @@
 <view class="title text-shadow">How was your stay?</view>
 <view class="container pa60 px100">
   <view class="label">Overall Rating</view>
-  <l-rate score="0" count="5" bind:linChange="changeScore" active-color="#E9C500" inActive-color="#F3ECC6" l-class="rating"/>
+  <l-rate score="0" count="5" bind:linchange="changeScore" active-color="#E9C500" inActive-color="#F3ECC6" l-class="rating"/>
   <view class="label">Comments</view>
   <l-textarea id="comment" value="{{content}}" bind:lininput="handleTextInput" auto-height="{{true}}" border="{{false}}" maxlength="300" placeholder="Please leave your comment..."/>
   <btn bindtap="createReview" color="red" text="Submit" class="pa20"/>

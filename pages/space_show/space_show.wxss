@@ -40,7 +40,7 @@ btn {
 .content {
   font-family: Roboto;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 24rpx;
   line-height: 36rpx;
   /* or 150% */
@@ -81,4 +81,10 @@ btn {
 
   color: #2C3D63;
 
+}
+
+.add-icon {
+  width:35rpx;
+  height:35rpx;
+  top: 30rpx;
 }

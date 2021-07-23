@@ -14,7 +14,20 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    const space_id = options.id || 1
+  },
+
+  /**
+   * Lifecycle function--Called when page is initially rendered
+   */
+  onReady: function () {
+
+  },
+
+  /**
+   * Lifecycle function--Called when page show
+   */
+  onShow: function () {
+    const space_id = this.options.id
     const page = this;
     wx.request({
       url: `http://localhost:3000/api/v1/spaces/${space_id}`,
@@ -29,20 +42,6 @@ Page({
         });
       }
     });
-  },
-
-  /**
-   * Lifecycle function--Called when page is initially rendered
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * Lifecycle function--Called when page show
-   */
-  onShow: function () {
-
   },
 
   /**

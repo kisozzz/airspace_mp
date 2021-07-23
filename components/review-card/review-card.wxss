@@ -1,10 +1,54 @@
 /* components/request-card.wxss */
 @import '/app';
 .card {
-  border-radius: 8px;
+  border-radius: 16rpx;
 }
 
 .border {
   width: 95%;
-  border-bottom: solid 1px #DDDDDD;
+  border-bottom: solid 2rpx #DDDDDD;
+}
+
+.name{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28rpx;
+  line-height: 48rpx;
+  /* or 171% */
+  
+  letter-spacing: 0.2rpx;
+  
+  color: #263238;
+
+}
+
+.content{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24rpx;
+  line-height: 36rpx;
+  /* or 150% */
+  
+  text-align: justify;
+  
+  color: #263238;
+  
+}
+
+.time{
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20rpx;
+  line-height: 38rpx;
+  /* identical to box height, or 171% */
+
+  letter-spacing: 0.2rpx;
+
+  /* ◇ Light / Dark */
+
+  color: #263238;
+
 }
