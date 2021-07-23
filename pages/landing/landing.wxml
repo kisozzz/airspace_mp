@@ -23,7 +23,7 @@
 <!-- popular and top spaces tabs -->
     <view class="choices flex">
       <view class="tapp fbody">Popular</view>
-      <view class="tapt mx60 fbody">Near You</view>
+      <view bindtap="navigateToLocationSearch" class="tapt mx60 fbody">Near You</view>
     </view>
   </view>
 

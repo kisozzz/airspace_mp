@@ -20,6 +20,7 @@ Page({
     console.log(options);
     const page = this;
     const query = options.query;
+    const location = options.location || null
       wx.request({
         url: `https://airspace-api.herokuapp.com/api/v1/spaces?query=${query}`,
         method: "GET",
@@ -27,7 +28,8 @@ Page({
           const spaces = res.data.spaces;
           // console.log(spaces);
           page.setData({
-            spaces: spaces
+            spaces: spaces,
+            location: location
           });
         }
       })
