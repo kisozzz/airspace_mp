@@ -16,20 +16,20 @@
 }
 
 .blur {
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(20rpx);
+  backdrop-filter: blur(20rpx);
 }
 
 .shadow {
-  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --tw-shadow: 0 2rpx 6rpx 0 rgba(0, 0, 0, 0.1), 0 2rpx 4rpx 0 rgba(0, 0, 0, 0.06);
 box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 .title {
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 36rpx;
+  line-height: 54rpx;
   /* identical to box height */
   color: #FFFFFF;
 }
@@ -38,8 +38,8 @@ box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #
   font-family: Poppins;
   font-style: normal;
   font-weight: 300;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 28rpx;
+  line-height: 42rpx;
   /* identical to box height */
   color: #FFFFFF;
 

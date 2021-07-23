@@ -3,7 +3,7 @@
   <view class="icons w60 row-between">
 
     
-    <navigator wx:if="{{page === 'landing'}}" url="/pages/landing/landing"><image src="/images/icons/homeactive.svg" class="home-icon-bigger pa20"></image></navigator>
+    <navigator wx:if="{{page === 'landing'}}" url="/pages/landing/landing"><image src="/images/icons/homeactive.svg" class="home-icon pa20"></image></navigator>
     <navigator wx:else url="/pages/landing/landing"><image src="/images/icons/home.svg" class="home-icon pa20"></image></navigator>
 
 

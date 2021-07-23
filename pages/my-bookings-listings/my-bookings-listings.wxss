@@ -31,8 +31,8 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 36rpx;
+  line-height: 54rpx;
   /* identical to box height */
   color: #C4C4C4;
   padding-left: 35rpx;
