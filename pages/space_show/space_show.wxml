@@ -3,7 +3,8 @@
 <card-show class="card-info z1" info="{{space}}" />
 <view class="container">
   <view class="title py20">DETAILS</view>
-  <view class="content">{{space.description}}</view>
+  <view class="content">Type: {{space.category}} space</view>
+  <view class="content pt20">{{space.description}}</view>
 </view>
 
 <!-- reviews -->
