@@ -11,22 +11,33 @@ Page({
   approve() {
     this.data.booking.owner_response = true
     this.data.booking.confirmed = true
-    console.log(this.data.booking.owner_response)
-    console.log(this.data.booking.confirmed)
-    wx.navigateTo({
-      url: `../../pages/manage_space/manage_space?id=${this.data.booking.space_id}`,
+    let booking = this.data.booking
+    wx.request({
+      url: `http://localhost:3000/api/v1/spaces/${booking.space_id}/bookings/${booking.id}`,
+      method: "PUT",
+      data: booking,
+      success() {
+        console.log("success")
+        wx.navigateTo({
+          url: `../../pages/manage_space/manage_space?id=${booking.space_id}`,
+        })
+      }
     })
   },
 
   deny() {
-    // call api,
-    // get response and replace booking data
     this.data.booking.owner_response = true
-    this.data.booking.confirmed = false
-    console.log(this.data.booking.owner_response)
-    console.log(this.data.booking.confirmed)
-    wx.navigateTo({
-      url: `../../pages/manage_space/manage_space?id=${this.data.booking.space_id}`,
+    let booking = this.data.booking
+    wx.request({
+      url: `http://localhost:3000/api/v1/spaces/${booking.space_id}/bookings/${booking.id}`,
+      method: "PUT",
+      data: booking,
+      success() {
+        console.log("success")
+        wx.navigateTo({
+          url: `../../pages/manage_space/manage_space?id=${booking.space_id}`,
+        })
+      }
     })
   },
 
