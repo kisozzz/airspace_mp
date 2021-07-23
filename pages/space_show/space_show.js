@@ -24,7 +24,7 @@ Page({
   createBooking() {
     // console.log('connected');
     const space_id = this.data.space.id;
-    const user_id = 1;
+    const user_id = 22;
     const start_date = '2021/07/20'
     const end_date = '2021/07/22'
     let booking = {
