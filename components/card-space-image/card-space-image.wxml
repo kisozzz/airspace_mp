@@ -1,8 +1,11 @@
 <!--components/card-space-image/card-space-image.wxml-->
 <navigator url="/pages/space_show/space_show?id={{info.id}}" class="relative card-sizing radius40 ofh">
   <image class="h100 w100 card-image bg-grey" src="{{info.image_urls[0]}}" mode="aspectFill"></image>
+  <view class="absolute a0" style="background: linear-gradient(180deg, rgba(85,85,85,0) 0%, rgba(68,68,68,0.3) 40%, rgba(51,51,51,0.8) 100%);"></view>
   <view class="absolute l0 b0 mb20 ml20">
+    
     <view class="title bold f36 white text-shadow">{{info.title}}</view>
     <view class="city f28 white text-shadow">{{info.city}}</view>
+   
   </view>
 </navigator>
