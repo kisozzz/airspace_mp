@@ -58,8 +58,7 @@
   </l-arc-popup>
 
 
-  <tabbar />
-  <navigator wx:else url="/pages/add_space/add_space"><image src="/images/icons/add.svg" class="add-icon absolute w10"></image></navigator>
+  <navigator url="/pages/add_space/add_space"><image src="/images/icons/add.svg" class="add-icon absolute w10"></image></navigator>
 
   <tabbar page="my-bookings-listings" />
 </view>
