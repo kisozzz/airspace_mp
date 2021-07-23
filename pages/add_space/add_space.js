@@ -7,19 +7,16 @@ Page({
   data: {
     typeArray:['Kitchen', 'Work', 'Event'],
     cityArray: ['Shanghai', 'Beijing', 'Shenzhen', 'Xiamen', 'Ningbo', 'Hangzhou', 'Nanjing', 'Chengdu', 'Changsha', 'Chongqing'],
-
     chooseImgs: [],
     textValue: ''
-
   },
 
   uploadImgs: [],
 
   submitSpace(event){
     console.log(event.detail);
-    // const {detail} = event;
     // const space_id = this.data.id;
-    const user_id = 22;
+    const user_id = 1;
     const title = event.detail.values.title;
     const category = event.detail.values.type;
     const city = event.detail.values.city;
@@ -47,13 +44,14 @@ Page({
           console.log(result)
           let url = JSON.parse(result.data).url;
           this.uploadImgs.push(url);
-          console.log(this.uploadImgs);
+          // console.log(this.uploadImgs);
         },
       });
     }),
     wx.request({
      url: 'https://airspace-api.herokuapp.com/api/v1/spaces',
     //  url: 'http://localhost:3000/api/v1/spaces',
+    // https://airspace-api.herokuapp.com/api/v1/spaces
      method: 'POST',
      data: { space: space },
      success(res) {
