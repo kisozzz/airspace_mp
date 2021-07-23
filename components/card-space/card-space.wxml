@@ -25,33 +25,6 @@
   </view>
 </view>
 
-<l-arc-popup show="{{showPopup}}" max-height="1000" min-height="200">
-  <view style="height: 700rpx;">
-<!-- form -->
-  <view class="container-form pa30">
-    <view class="title-form pb20">Book Space</view>
-    <l-form name="booking_form" l-form-btn-class="l-form-btn-class" bind:linsubmit="submit">
-        <l-form-item label="Start Date" name="start-date" class="label">
-            <!-- <l-calendar show="{{ true }}" type="range" color="#f60"/> -->
-            <l-input id="start-date" value="{{booking.start_date}}" hide-label show-row="{{false}}"/>
-        </l-form-item>
-        <l-form-item label="End Date" name="end-date" class="label">
-            <!-- <l-calendar show="{{ true }}" type="range" color="#f60"/> -->
-            <l-input id="end-date" value="{{booking.end_date}}" hide-label show-row="{{false}}"/>
-        </l-form-item>
-
-        <l-form-item label="Number of People" name="num" class="label">
-            <l-input id="num" value="{{booking.number_of_people}}" hide-label show-row="{{false}}"/>
-        </l-form-item>
-
-        <l-form-item label="Additional Info" name="info" class="label">
-            <l-input id="info" value="{{booking.additional_info}}" hide-label show-row="{{false}}"/>
-        </l-form-item>
-        <btn bindtap="updateBooking" color="red" text="Submit" class="pa20"/>
-    </l-form>
-  </view>
-  </view>
-</l-arc-popup>
 
 
 <!-- <view class="card w90 pa20 mauto rounded bg-white shadow">

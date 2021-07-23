@@ -22,31 +22,32 @@ Page({
   },
 
   createBooking(e) {
-    console.log(e)
-    // console.log('connected');
-    // const space_id = this.data.space.id;
-    // const user_id = 1;
-    // const start_date = '2021/07/20';
-    // const end_date = '2021/07/22';
-    // let booking = {
-    //   space_id: space_id,
-    //   user_id: user_id,
-    //   start_date: start_date,
-    //   end_date: end_date,
-    //   number_of_people: 5
-    // }
-    // wx.request({
-    // // https://airspace-api.herokuapp.com/api/v1/spaces/${space_id}/bookings
-    //  url: `https://airspace-api.herokuapp.com/api/v1/spaces/${space_id}/bookings`,
-    //  method: 'POST',
-    //  data: { booking: booking },
-    //  success(res) {
-    //    console.log(res)
-    //     wx.redirectTo({
-    //       url: `/pages/my-bookings-listings/my-bookings-listings?id=${user_id}`
-    //     });
-    //   }
-    // })
+    const space_id = this.data.space.id;
+    const user_id = 1;
+    const start_date = new Date(e.detail.values.start_date);
+    const end_date = new Date(e.detail.values.end_date);
+    const number_of_people = e.detail.values.num;
+    const info = e.detail.values.info
+    let booking = {
+      space_id: space_id,
+      user_id: user_id,
+      start_date: start_date,
+      end_date: end_date,
+      number_of_people: number_of_people,
+      additional_info: info
+    }
+    wx.request({
+    // https://airspace-api.herokuapp.com/api/v1/spaces/${space_id}/bookings
+     url: `https://airspace-api.herokuapp.com/api/v1/spaces/${space_id}/bookings`,
+     method: 'POST',
+     data: { booking: booking },
+     success(res) {
+       console.log(res)
+        wx.redirectTo({
+          url: `/pages/my-bookings-listings/my-bookings-listings?id=${user_id}`
+        });
+      }
+    })
   },
 
   /**

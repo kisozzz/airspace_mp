@@ -30,7 +30,7 @@ Page({
     const space_id = this.options.id
     const page = this;
     wx.request({
-      url: `http://localhost:3000/api/v1/spaces/${space_id}`,
+      url: `https://airspace-api.herokuapp.com/api/v1/spaces/${space_id}`,
       method: "GET",
       success(res) {
         const space = res.data
