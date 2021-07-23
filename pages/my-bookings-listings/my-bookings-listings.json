@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "card-space": "/components/card-space/card-space"
+    "card-space": "/components/card-space/card-space",
+    "card-space-owner": "/components/card-space-owner/card-space-owner"
   }
 }

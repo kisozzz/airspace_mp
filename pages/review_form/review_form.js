@@ -8,21 +8,25 @@ Page({
 
   },
   handleTextInput(e){
+    console.log(e.detail.value)
     this.setData({
       content: e.detail.value
     })
   },
 
   changeScore(e){
-    console.log(e.detail)
+    console.log(e.detail.score)
     this.setData({
-      rating: e.detail.value
+      rating: e.detail.score
     })
   },
 
   createReview(){
-    const space_id = this.data.space.id;
-    const user_id = 1;
+    console.log(this.data)
+    const space_id = this.data.space_id;
+    const user_id = 22;
+    const rating = this.data.rating;
+    const content = this.data.content;
     let review = {
       space_id: space_id,
       user_id: user_id,
@@ -36,7 +40,7 @@ Page({
      success(res) {
        console.log(res)
         wx.redirectTo({
-          url: `/pages/my-bookings-listings/my-bookings-listings?id=${user_id}`
+          url: `/pages/space_show/space_show?id=${space_id}`
         });
       }
     })
@@ -45,7 +49,10 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // console.log(options)
+    this.setData({
+      space_id: options.id
+    })
   },
 
   /**

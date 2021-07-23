@@ -5,76 +5,25 @@ Page({
    * Page initial data
    */
   data: {
-    array: ['Shanghai', 'Beijing', 'Shenzhen'],
-    objectArray: [
-      {
-        id: 0,
-        name: 'Shanghai'
-      },
-      {
-        id: 1,
-        name: 'Beijing'
-      },
-      {
-        id: 2,
-        name: 'Shenzhen'
-      },
-      {
-        id: 3,
-        name: '日本'
-      }
-    ],
-
-    space: {
-      title: '',
-      type: '',
-      city: '',
-      address: '',
-      price: '',
-      image_url: '',
-      description: ''
-    },
-
+    typeArray:['Kitchen', 'Work', 'Event'],
+    cityArray: ['Shanghai', 'Beijing', 'Shenzhen', 'Xiamen', 'Ningbo', 'Hangzhou', 'Nanjing', 'Chengdu', 'Changsha', 'Chongqing'],
     chooseImgs: [],
     textValue: ''
-
   },
+
   uploadImgs: [],
-  submit(event){
-    const {detail} = event;
-  },
 
-  bindPickerChange: function (e) {
-    console.log('picker发送选择改变，携带值为', e.detail.value)
-    this.setData({
-      index: e.detail.value
-    })
-  },
-
-  handleChooseImg: function(e) {
-    console.log(e.detail)
-    this.setData({
-      chooseImgs: [...this.data.chooseImgs,...e.detail.all]
-    })
-  },
-
-  handleTextInput(e){
-    this.setData({
-      description:e.detail.value
-    })
-  },
-
-  createSpace() {
-    const space_id = this.data.id;
+  submitSpace(event){
+    console.log(event.detail);
+    // const space_id = this.data.id;
     const user_id = 1;
-    const title = 'studio';
-    const category = 'studio';
-    const city = 'shanghai';
-    const address = 'shanghai';
-    const price = '200';
+    const title = event.detail.values.title;
+    const category = event.detail.values.type;
+    const city = event.detail.values.city;
+    const address = event.detail.values.address;
+    const price = event.detail.values.price;
     const {description, chooseImgs} = this.data;
     let space = {
-      space_id: space_id,
       user_id: user_id,
       title: title,
       category: category,
@@ -95,21 +44,48 @@ Page({
           console.log(result)
           let url = JSON.parse(result.data).url;
           this.uploadImgs.push(url);
-          console.log(this.uploadImgs);
+          // console.log(this.uploadImgs);
         },
       });
     }),
     wx.request({
      url: 'https://airspace-api.herokuapp.com/api/v1/spaces',
     //  url: 'http://localhost:3000/api/v1/spaces',
+    // https://airspace-api.herokuapp.com/api/v1/spaces
      method: 'POST',
      data: { space: space },
      success(res) {
        console.log(res)
         wx.redirectTo({
-          url: `/pages/my-bookings-listings/my-bookings-listings?id=${user_id}`
+          url: `/pages/my-bookings-listings/my-bookings-listings?id=${user_id}&tab=spaces`
         });
       }
+    })
+  },
+
+  bindPickerChangeType: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      typeIndex: e.detail.value
+    })
+  },
+  bindPickerChangeCity: function (e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      cityIndex: e.detail.value
+    })
+  },
+  handleChooseImg: function(e) {
+    console.log(e.detail)
+    this.setData({
+      chooseImgs: [...this.data.chooseImgs,...e.detail.all]
+    })
+  },
+
+  handleTextInput(e){
+    console.log(e.detail.value)
+    this.setData({
+      description:e.detail.value
     })
   },
 
@@ -118,7 +94,7 @@ Page({
    */
   onLoad: function (options) {
     wx.lin.initValidateForm(this);
-
+    console.log(options);
     const page = this;
     wx.request({
       url: 'https://airspace-api.herokuapp.com/api/v1/spaces',
