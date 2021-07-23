@@ -25,6 +25,15 @@
       })
     },
 
+    navigateToLocationSearch() {
+      console.log('hi')
+      const query = 'shanghai'
+      const location = 'Shanghai'
+      wx.navigateTo({
+        url: `/pages/search/search?query=${query}&location=${location}`,
+      })
+    },
+
     onLoad: function (options) {
       const page = this;
       wx.request({
