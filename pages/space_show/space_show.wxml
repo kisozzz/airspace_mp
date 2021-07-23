@@ -16,10 +16,11 @@
     </block>
   </view>
 </view>
+<tabbar />
 
 
-<l-arc-popup show="{{showPopup}}" max-height="650" min-height="200">
-  <view style="height: 580rpx;">
+<l-arc-popup show="{{showPopup}}" max-height="800" min-height="200">
+  <view style="height: 800rpx;">
 <!-- form -->
   <view class="container-form pa30">
     <view class="title-form pb20">Book Space</view>
