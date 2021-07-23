@@ -18,7 +18,7 @@
         <review-card review="{{review}}"/>
       </view>
     </block>
-    <view wx:els class="content pt20">
+    <view wx:if="{{reviews.length === 0}}" class="content pt20">
       No reviews yet. Be the first to review this space!
     </view>
   </view>
