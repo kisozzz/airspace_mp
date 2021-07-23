@@ -30,6 +30,14 @@ Component({
           });
         }
       })
+    },
+
+    editSpace(){
+      const user_id = this.data.space.user_id;
+      wx.redirectTo({
+        url: `/pages/edit_space/edit_space?id=${user_id}`
+      })
     }
+
   }
 })

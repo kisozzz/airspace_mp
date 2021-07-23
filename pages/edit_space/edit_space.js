@@ -1,8 +1,8 @@
-// pages/form/form.js
+// pages/edit_space/edit_space.js
 Page({
 
   /**
-   * Page initial data
+   * 页面的初始数据
    */
   data: {
     typeArray:['Kitchen', 'Work', 'Event'],
@@ -15,8 +15,8 @@ Page({
 
   submitSpace(event){
     console.log(event.detail);
-    // const space_id = this.data.id;
-    const user_id = 1;
+    const space_id = this.data.space.id;
+    const user_id = 22;
     const title = event.detail.values.title;
     const category = event.detail.values.type;
     const city = event.detail.values.city;
@@ -24,6 +24,7 @@ Page({
     const price = event.detail.values.price;
     const {description, chooseImgs} = this.data;
     let space = {
+      space_id: space_id,
       user_id: user_id,
       title: title,
       category: category,
@@ -49,21 +50,47 @@ Page({
       });
     }),
     wx.request({
-     url: 'https://airspace-api.herokuapp.com/api/v1/spaces',
-    //  url: 'http://localhost:3000/api/v1/spaces',
-    // https://airspace-api.herokuapp.com/api/v1/spaces
-     method: 'POST',
+     url: `https://airspace-api.herokuapp.com/api/v1/spaces/${space_id}`,
+     method: 'PUT',
      data: { space: space },
      success(res) {
        console.log(res)
         wx.redirectTo({
-          url: `/pages/my-bookings-listings/my-bookings-listings?id=${user_id}`
+          url: `/pages/my-bookings-listings/my-bookings-listings?id=${user_id}?tab=spaces`
         });
       }
     })
   },
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad: function (options) {
+    wx.lin.initValidateForm(this);
+    let page = this;
+
+    wx.showToast({
+      title: 'Loading...',
+      icon: 'loading',
+      duration: 1500
+    });
 
 
+    // Get story data from server (to show in form)
+    wx.request({
+      url: `https://airspace-api.herokuapp.com/api/v1/spaces/${options.id}`,
+      method: 'GET',
+      success(res) {
+        var space = res.data;
+
+        // Update local data
+        page.setData({
+          space
+        });
+
+        wx.hideToast();
+      }
+    });
+  },
   bindPickerChangeType: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
@@ -89,75 +116,50 @@ Page({
       description:e.detail.value
     })
   },
-
-
   /**
-   * Lifecycle function--Called when page load
-   */
-  onLoad: function (options) {
-    wx.lin.initValidateForm(this);
-    console.log(options);
-    const page = this;
-    wx.request({
-      url: 'https://airspace-api.herokuapp.com/api/v1/spaces',
-      // url: 'http://localhost:3000/api/v1/spaces',
-      method: "GET",
-      success(res) {
-        const space = res.data;
-        console.log(space);
-        page.setData({
-          space: space
-        });
-      }
-    })
-
-
-  },
-
-  /**
-   * Lifecycle function--Called when page is initially rendered
+   * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
 
   },
 
   /**
-   * Lifecycle function--Called when page show
+   * 生命周期函数--监听页面显示
    */
   onShow: function () {
 
   },
 
   /**
-   * Lifecycle function--Called when page hide
+   * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
 
   },
 
   /**
-   * Lifecycle function--Called when page unload
+   * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
 
   },
 
   /**
-   * Page event handler function--Called when user drop down
+   * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
 
   },
 
   /**
-   * Called when page reach bottom
+   * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
 
   },
 
   /**
-   * Called when user click on the top right corner to share
+   * 用户点击右上角分享
    */
   onShareAppMessage: function () {
 

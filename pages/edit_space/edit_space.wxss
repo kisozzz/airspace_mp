@@ -1,0 +1,34 @@
+/* pages/edit_space/edit_space.wxss */
+/* pages/form/form.wxss */
+.container {
+  width: 80%;
+}
+
+.body {
+  background-color: #FAFAFF;
+}
+
+.title {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #2C3D63;
+
+}
+
+.label {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  /* identical to box height, or 200% */
+
+  letter-spacing: 1px;
+
+  color: #2C3D63;
+  /* padding: 10rpx; */
+}
