@@ -57,12 +57,11 @@ Page({
      success(res) {
        console.log(res)
         wx.redirectTo({
-          url: `/pages/my-bookings-listings/my-bookings-listings?id=${user_id}`
+          url: `/pages/my-bookings-listings/my-bookings-listings?id=${user_id}&tab=spaces`
         });
       }
     })
   },
-
 
   bindPickerChangeType: function (e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
@@ -89,7 +88,6 @@ Page({
       description:e.detail.value
     })
   },
-
 
   /**
    * Lifecycle function--Called when page load

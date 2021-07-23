@@ -26,7 +26,7 @@ Component({
         success(res) {
           console.log(res);
           wx.redirectTo({
-            url: `/pages/my-bookings-listings/my-bookings-listings?id=${user_id}`
+            url: `/pages/my-bookings-listings/my-bookings-listings?id=${user_id}&tab=spaces`
           });
         }
       })
