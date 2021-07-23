@@ -28,5 +28,5 @@
     </block>
   </view>
 
-  <tabbar />
+  <tabbar page="my-bookings-listings" />
 </view>
