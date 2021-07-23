@@ -8,6 +8,7 @@
     "pages/review_form/review_form",
     "pages/my-bookings-listings/my-bookings-listings",
     "pages/add_space/add_space",
+    "pages/edit_space/edit_space",
     "pages/search/search",
     "pages/manage_space/manage_space",
     "pages/approve_booking/approve_booking"
@@ -32,7 +33,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "Airspace",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",

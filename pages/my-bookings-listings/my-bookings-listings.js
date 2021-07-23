@@ -60,13 +60,24 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    wx.lin.initValidateForm(this);
-    const userID = options.id || 1
+    const userID = options.id || 22
+    const targetTab = options.tab || null
+
+    if (targetTab ===  'spaces') {
+      this.setData({
+        currentTab: "spaces"
+      })
+    } else {
+      this.setData({
+        currentTab: "bookings"
+      })
+    }
     const page = this;
       wx.request({
         url: `https://airspace-api.herokuapp.com/api/v1/bookings/user/${userID}`,
         method: "GET",
         success(res) {
+        console.log('request 1 bookings')
           const bookings = res.data.bookings
           page.setData({
             bookings: bookings
@@ -79,6 +90,7 @@ Page({
         // url: 'http://localhost:3000/api/v1/spaces',
         method: "GET",
         success(res) {
+          console.log('request 2 spaces')
           const spaces = res.data.spaces
           page.setData({
             spaces: spaces

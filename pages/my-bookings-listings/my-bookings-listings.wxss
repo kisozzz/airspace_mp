@@ -37,3 +37,8 @@
   color: #C4C4C4;
   padding-left: 35rpx;
 }
+
+.add-icon{
+  right: 40rpx;
+  bottom: 10rpx;
+}

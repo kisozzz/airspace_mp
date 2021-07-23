@@ -12,6 +12,14 @@
   width: 85%;
 }
 
+.spaces-grid {
+  display: grid;
+  gap: 20rpx 5rpx;
+  grid-template-columns: 1fr 1fr;
+  width: 98%;
+  margin: 0 auto;
+}
+
 .swiper-card {
   width: 426rpx !important;
 }
@@ -73,10 +81,7 @@
   font-size: 36rpx;
   line-height: 54rpx;
   /* identical to box height */
-
-
   color: #FF7162;
-
 }
 
 .tapt {
@@ -86,7 +91,5 @@
   font-size: 36rpx;
   line-height: 54rpx;
   /* identical to box height */
-
-
   color: #C4C4C4;
 }

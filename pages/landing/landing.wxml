@@ -1,10 +1,12 @@
 <view class="body vw vh100">
   <view class="container mauto pa0">
-    <view class="pt50 row-end">
-      <image src="{{avatar}}" class="avatar-md bg-grey"></image>
+    <view class="flex column relative pt100">
+      <view class="absolute t0 r0 pt60">
+        <image src="{{avatar}}" class="avatar-md bg-grey"></image>
+      </view>
+      <view class="hello fbody mb20">Hello Xun!</view>
+      <view class="findtext ftheader">Find your space</view>
     </view>
-    <view class="hello fbody mb20">Hello User</view>
-    <view class="findtext ftheader">Find your space</view>
 
   <!-- search bar -->
     <form bindsubmit="searchSpaces">
@@ -21,15 +23,16 @@
 <!-- popular and top spaces tabs -->
     <view class="choices flex">
       <view class="tapp fbody">Popular</view>
-      <view class="tapt mx60 fbody">Top Spaces</view>
+      <view bindtap="navigateToLocationSearch" class="tapt mx60 fbody">Near You</view>
     </view>
   </view>
 
 <!-- swiper -->
+
   <view class="mt60 mb60 ml20">
     <swiper class="index-swiper" indicator-dots="{{indicatorDots}}">
       <block wx:if="{{spaces}}">
-        <block wx:for="{{spaces}}" wx:key="index">
+        <block wx:for="{{spacesSwiper}}" wx:key="index">
           <swiper-item class="swiper-card">
             <card-space-image info="{{item}}" />
           </swiper-item>
@@ -44,5 +47,18 @@
       </block>
     </swiper>
   </view>
-  <tabbar/>
+
+  <!-- spaces vertical grid -->
+  <view class="container mauto pa0 mb40">
+    <view class="findtext ftheader">Explore</view>
+  </view>
+  <view class="spaces-grid mb200">
+    <block wx:if="{{spaces}}">
+        <block wx:for="{{spaces}}" wx:key="index">
+            <card-space-image info="{{item}}" />
+        </block>
+      </block>  
+  </view>
+
+  <tabbar page="landing" />
 </view>

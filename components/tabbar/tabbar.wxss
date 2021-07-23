@@ -2,8 +2,14 @@
 @import '/app';
 
 .me-icon, .add-icon, .home-icon {
-  height: 40rpx;
-  width: 40rpx;
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.home-icon-bigger {
+  height: 70rpx;
+  width: 70rpx;
+  transform: translateY(8rpx);
 }
 
 .bottom-tab {

@@ -1,0 +1,26 @@
+<!--pages/components/card.wxml-->
+<view class="card w90 pa20 mauto rounded bg-white shadow">
+  <view class="card-img mauto w100 h100 bg-grey rounded ofh">
+    <image class="h100 w100 bg-grey" src="{{space.image_urls[0]}}" mode="aspectFill"></image>
+  </view>
+
+  <view class="ml30 relative flex column justify-between">
+    <view class="flex column">
+      <view class="w100 row-between">
+        <view class="f30">{{space.title}}</view>
+        <!-- <view>stars stars</view> -->
+        <l-rate score="{{info.rating}}" size="22" l-class="" active-color="#E9C501" inActive-color="#F3ECC6"/>
+      </view>
+      <view class="f24 mt20 opacity7">{{space.city}}</view>
+    </view>
+
+    <view class="flex">
+      <view class="f24 opacity7">{{space.category}}</view>
+      <view class="f24 ml20 opacity7">{{space.price}}¥</view>
+    </view>
+    <view class="flex absolute b0 r0">
+      <view bindtap="editSpace" class="red-text">Edit</view>
+      <view bindtap="deleteSpace" class="red-text ml20">Delete</view>
+    </view>
+  </view>
+</view>
