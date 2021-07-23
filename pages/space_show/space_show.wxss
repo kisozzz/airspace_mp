@@ -12,10 +12,6 @@ btn {
   justify-content: center;
   top: -130rpx;
   margin-bottom: -130rpx;
-  /* left: 100rpx;
-  right: 30rpx; */
-  
-  /* bottom: 700rpx; */
 }
 
 .container {
@@ -33,7 +29,6 @@ btn {
   line-height: 36rpx;
   text-align: justify;
   letter-spacing: 6rpx;
-
   color: #263238;
 }
 
@@ -44,11 +39,8 @@ btn {
   font-size: 24rpx;
   line-height: 36rpx;
   /* or 150% */
-
   text-align: justify;
-
   color: #263238;
-
 }
 
 .l-form-btn-class{
@@ -63,10 +55,8 @@ btn {
   font-size: 35rpx;
   line-height: 72rpx;
   /* identical to box height */
-
   display: flex;
   align-items: center;
-
   color: #2C3D63;
 } 
 
