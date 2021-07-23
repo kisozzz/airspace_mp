@@ -4,7 +4,7 @@
       <view class="absolute t0 r0 pt60">
         <image src="{{avatar}}" class="avatar-md bg-grey"></image>
       </view>
-      <view class="hello fbody mb20">Hello User</view>
+      <view class="hello fbody mb20">Hello Xun!</view>
       <view class="findtext ftheader">Find your space</view>
     </view>
 

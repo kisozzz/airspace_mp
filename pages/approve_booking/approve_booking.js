@@ -13,7 +13,7 @@ Page({
     this.data.booking.confirmed = true
     let booking = this.data.booking
     wx.request({
-      url: `http://localhost:3000/api/v1/spaces/${booking.space_id}/bookings/${booking.id}`,
+      url: `https://airspace-api.herokuapp.com/api/v1/spaces/${booking.space_id}/bookings/${booking.id}`,
       method: "PUT",
       data: booking,
       success() {
@@ -29,7 +29,7 @@ Page({
     this.data.booking.owner_response = true
     let booking = this.data.booking
     wx.request({
-      url: `http://localhost:3000/api/v1/spaces/${booking.space_id}/bookings/${booking.id}`,
+      url: `https://airspace-api.herokuapp.com/api/v1/spaces/${booking.space_id}/bookings/${booking.id}`,
       method: "PUT",
       data: booking,
       success() {
@@ -47,7 +47,7 @@ Page({
   onLoad: function (options) {
     const page = this
     wx.request ({
-      url: `http://localhost:3000/api/v1/bookings/${page.options.id}`,
+      url: `https://airspace-api.herokuapp.com/api/v1/bookings/${page.options.id}`,
       method: 'GET',
       success(res) {
         const booking = res.data
