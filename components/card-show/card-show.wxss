@@ -48,16 +48,16 @@
 }
 .fee {
   position: absolute;
-  width: 200rpx;
-  height: 20px;
-  left: 48px;
-  top: 108px;
+  width: 116rpx;
+  height: 40rpx;
+  left: 96rpx;
+  top: 216rpx;
 
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 28rpx;
+  line-height: 40rpx;
   /* identical to box height, or 143% */
 
   letter-spacing: 0.005em;

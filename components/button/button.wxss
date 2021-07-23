@@ -5,34 +5,34 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90px;
-  height: 35px;
-  bottom: 20px;
-  border: 1px solid #FF7162;
+  width: 180rpx;
+  height: 70rpx;
+  bottom: 40rpx;
+  border: 2rpx solid #FF7162;
   box-sizing: border-box;
-  border-radius: 8px;
+  border-radius: 16rpx;
 }
 
 .button-grey {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90px;
-  height: 35px;
-  bottom: 20px;
-  border: 1px solid #aaa;
+  width: 180rpx;
+  height: 70rpx;
+  bottom: 40rpx;
+  border: 2rpx solid #aaa;
   box-sizing: border-box;
-  border-radius: 8px;
+  border-radius: 16rpx;
 }
 
 .label-red {
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 24px;
+  font-size: 24rpx;
+  line-height: 48rpx;
   text-align: center;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.2rpx;
   color: #FF7162;
 }
 
@@ -40,9 +40,9 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 24px;
+  font-size: 24rpx;
+  line-height: 48rpx;
   text-align: center;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.2rpx;
   color: #aaa;
 }
