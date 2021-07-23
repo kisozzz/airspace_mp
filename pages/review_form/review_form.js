@@ -24,7 +24,7 @@ Page({
   createReview(){
     console.log(this.data)
     const space_id = this.data.space_id;
-    const user_id = 22;
+    const user_id = 1;
     const rating = this.data.rating;
     const content = this.data.content;
     let review = {

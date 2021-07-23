@@ -16,7 +16,7 @@ Page({
   submitSpace(event){
     console.log(event.detail);
     const space_id = this.data.space.id;
-    const user_id = 22;
+    const user_id = 1;
     const title = event.detail.values.title;
     const category = event.detail.values.type;
     const city = event.detail.values.city;

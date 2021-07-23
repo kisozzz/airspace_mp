@@ -28,7 +28,8 @@ Page({
   updateBooking(e) {
     const booking_id = this.data.booking.id
     const space_id = this.data.booking.space_id
-    const user_id = this.data.booking.user_id
+    // const user_id = this.data.booking.user_id
+    const user_id = 1
     const start_date = new Date(e.detail.values.start_date);
     const end_date = new Date(e.detail.values.end_date);
     const number_of_people = e.detail.values.num;
