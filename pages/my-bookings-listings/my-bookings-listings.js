@@ -50,9 +50,9 @@ Page({
       data: newBooking,
       success() {
         console.log("success")
-        // wx.navigateTo({
-        //   url: `../../pages/manage_space/manage_space?id=${booking.space_id}`,
-        // })
+        wx.navigateTo({
+          url: `my-bookings-listings?id=${user_id}`,
+        })
       }
     })
   },
@@ -60,6 +60,7 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
+    wx.lin.initValidateForm(this);
     const userID = options.id || 22
     const targetTab = options.tab || null
 
