@@ -2,11 +2,11 @@
 @import '/stylesheets/index';
 
 .card {
-  /* position: relative; */
-  width: 688rpx;
-  height: 356rpx;
+  position: relative;
+  width: 580rpx;
+  height: 300rpx;
   background-color: white;
-
+  padding: 50rpx;
   filter: drop-shadow(0rpx 4rpx 4rpx rgba(0, 0, 0, 0.2));
   border-radius: 20rpx;
 }
@@ -15,11 +15,11 @@
   font-weight: 600;
   font-style: normal;
   line-height: 55rpx;
-  position: relative;
+  /* position: relative; */
   height: 64rpx;
-  left: 30rpx;
+  /* left: 30rpx;
   right: 14rpx;
-  top: 45rpx;
+  top: 45rpx; */
   display: flex;
   align-items: center;
 
@@ -28,11 +28,11 @@
 
 
 .address {
-  position: absolute;
-  left: 96rpx;
+  /* position: absolute; */
+  /* left: 96rpx;
   right: -32rpx;
   top: 150rpx;
-  bottom: 162rpx;
+  bottom: 162rpx; */
 
   font-family: Roboto;
   font-style: normal;
@@ -47,12 +47,8 @@
 
 }
 .fee {
-  position: absolute;
-  width: 116rpx;
-  height: 40rpx;
-  left: 96rpx;
-  top: 216rpx;
-
+  width: 200rpx;
+  height: 20px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
@@ -66,23 +62,23 @@
 
 }
 .icon-pin {
-  position: absolute;
+  /* position: absolute; */
   width: 40rpx;
   height: 40rpx;
-  left: 50rpx;
-  top: 150rpx;
+  /* left: 50rpx;
+  top: 150rpx; */
 }
 .icon-rmb {
-  position: absolute;
+  /* position: absolute; */
   width: 40rpx;
   height: 40rpx;
-  top: 212rpx;
-  left: 50rpx;
-}
+  /* top: 212rpx;
+  left: 50rpx; */
+} 
 
 .rating {
   /* left: 10rpx; */
-  top: 180rpx;
+  /* top: 180rpx; */
 }
 
 

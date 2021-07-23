@@ -1,10 +1,16 @@
 <!--components/card-show/card-show.wxml-->
-<view class="card">
+<view class="card flex column justify-around">
   <view class="space-name f48">{{info.title}}</view>
+  <view class="flex items-center mt20">
   <image src="/images/icons/pin.svg" class="icon-pin"></image>
-  <view class="address">{{info.city}}</view>
-  <image src="/images/icons/rmb.svg" class="icon-rmb"></image>
-  <view class="fee">{{info.price}}/hour</view>
+    <view class="address">{{info.city}}</view>
+  </view>
+  <view class="flex items-center">
+    <image src="/images/icons/rmb.svg" class="icon-rmb"></image>
+    <view class="fee">{{info.price}}/hour</view>
+  </view>
   <btn bindtap="openPopup" color="red" text="Book Now" class="absolute r0 b0 pr20"/>
-  <l-rate score="{{info.averagerating}}" size="30" active-color="#E9C500" inActive-color="#F3ECC6" l-class="rating relative pa40 pl40"/>
+  <view>
+  <l-rate score="{{info.averagerating}}" size="30" active-color="#E9C500" inActive-color="#F3ECC6" l-class="rating relative"/>
+  </view>
 </view>
