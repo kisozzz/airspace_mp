@@ -6,9 +6,11 @@
   width: 50rpx;
 }
 
-/* .active {
-  box-shadow: 2px 2px 2px #FF7162;
-} */
+.home-icon-bigger {
+  height: 70rpx;
+  width: 70rpx;
+  transform: translateY(8rpx);
+}
 
 .bottom-tab {
   position:fixed;
