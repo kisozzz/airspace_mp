@@ -32,9 +32,11 @@
         method: "GET",
         success(res) {
           const spaces = res.data.spaces;
+          const spacesSwiper = spaces.slice(-5);
           // console.log(spaces);
           page.setData({
-            spaces: spaces
+            spaces: spaces,
+            spacesSwiper: spacesSwiper
           });
         }
       })
