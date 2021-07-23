@@ -26,7 +26,6 @@
     },
 
     navigateToLocationSearch() {
-      console.log('hi')
       const query = 'shanghai'
       const location = 'Shanghai'
       wx.navigateTo({

@@ -1,7 +1,7 @@
 <!--pages/search/search.wxml-->
 <view class="body vw vh100">
-  <view class="mx30">
-    <view class="py40 f40 pl search-text medium">
+  <view class="mb200">
+    <view class="pl20 py40 f40 pl search-text medium">
     Found {{spaces.length}} spaces
     <block wx:if="{{location}}"> near {{location}}</block></view>
     <view class='search-results'>
