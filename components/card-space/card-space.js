@@ -48,6 +48,10 @@ Component({
         showPopup: true,
         booking: booking
       })
+    },
+
+    updateBooking(e) {
+      console.log(e)
     }
   }
 })

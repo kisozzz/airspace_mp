@@ -9,7 +9,7 @@
       <view class="w100 row-between">
         <view class="f30">{{booking.space.title}}</view>
         <!-- <view>stars stars</view> -->
-        <l-rate score="{{info.rating}}" size="22" l-class="" active-color="#E9C501" inActive-color="#F3ECC6"/>
+        <l-rate score="{{booking.spaceaveragerating}}" size="22" l-class="" active-color="#E9C501" inActive-color="#F3ECC6"/>
       </view>
       <view class="f24 mt20 opacity7">{{booking.space.city}}</view>
     </view>
@@ -25,8 +25,8 @@
   </view>
 </view>
 
-<l-arc-popup show="{{showPopup}}" max-height="650" min-height="200">
-  <view style="height: 580rpx;">
+<l-arc-popup show="{{showPopup}}" max-height="1000" min-height="200">
+  <view style="height: 700rpx;">
 <!-- form -->
   <view class="container-form pa30">
     <view class="title-form pb20">Book Space</view>
@@ -41,14 +41,13 @@
         </l-form-item>
 
         <l-form-item label="Number of People" name="num" class="label">
-            <l-input id="num" value="{{booking_form.num}}" hide-label show-row="{{false}}"/>
+            <l-input id="num" value="{{booking.number_of_people}}" hide-label show-row="{{false}}"/>
         </l-form-item>
 
         <l-form-item label="Additional Info" name="info" class="label">
             <l-input id="info" value="{{booking.additional_info}}" hide-label show-row="{{false}}"/>
         </l-form-item>
-
-        <btn bindtap="createBooking" color="red" text="Submit" class="pa20"/>
+        <btn bindtap="updateBooking" color="red" text="Submit" class="pa20"/>
     </l-form>
   </view>
   </view>
