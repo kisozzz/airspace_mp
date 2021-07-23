@@ -12,6 +12,14 @@
   width: 85%;
 }
 
+.spaces-grid {
+  display: grid;
+  gap: 20rpx 5rpx;
+  grid-template-columns: 1fr 1fr;
+  width: 98%;
+  margin: 0 auto;
+}
+
 .swiper-card {
   width: 426rpx !important;
 }

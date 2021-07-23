@@ -23,15 +23,16 @@
 <!-- popular and top spaces tabs -->
     <view class="choices flex">
       <view class="tapp fbody">Popular</view>
-      <view class="tapt mx60 fbody">Top Spaces</view>
+      <view class="tapt mx60 fbody">Near You</view>
     </view>
   </view>
 
 <!-- swiper -->
+
   <view class="mt60 mb60 ml20">
     <swiper class="index-swiper" indicator-dots="{{indicatorDots}}">
       <block wx:if="{{spaces}}">
-        <block wx:for="{{spaces}}" wx:key="index">
+        <block wx:for="{{spacesSwiper}}" wx:key="index">
           <swiper-item class="swiper-card">
             <card-space-image info="{{item}}" />
           </swiper-item>
@@ -46,5 +47,18 @@
       </block>
     </swiper>
   </view>
+
+  <!-- spaces vertical grid -->
+  <view class="container mauto pa0 mb40">
+    <view class="findtext ftheader">Explore</view>
+  </view>
+  <view class="spaces-grid">
+    <block wx:if="{{spaces}}">
+        <block wx:for="{{spaces}}" wx:key="index">
+            <card-space-image info="{{item}}" />
+        </block>
+      </block>  
+  </view>
+
   <tabbar/>
 </view>
