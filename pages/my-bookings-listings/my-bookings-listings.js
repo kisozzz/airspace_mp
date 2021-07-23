@@ -60,7 +60,8 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    const userID = options.id || 22
+    // const userID = options.id || 1
+    const userID = 1
     const targetTab = options.tab || null
 
     if (targetTab ===  'spaces') {
