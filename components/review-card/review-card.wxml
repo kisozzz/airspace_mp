@@ -1,14 +1,14 @@
 <view class="card w100 mauto my20">
   <view class="row-between pt30">
-    <view class="user flex items-center mx20">
-      <view class="avatar-md bg-black"></view>
-      <view class="name mx20">{{review.user.first_name}}</view>
-    </view>
+    <!-- <view class="user flex items-center mx20"> -->
+      <!-- <view class="avatar-md bg-black"></view> -->
+      <view class="name mx20">{{review.user.first_name}} {{review.user.last_name}}</view>
+    <!-- </view> -->
     <view class="info">
       <l-rate score="{{review.rating}}" size="30" active-color="#E9C500" inActive-color="#F3ECC6" l-class="rating relative pa40 pl40"/>
     </view>
   </view>
-  <view class="mx30 py20">
+  <view class="mx20 py10">
     <view class="content">{{review.content}}</view>
     <view class="time pt20">{{review.created_at}}</view>
   </view>
