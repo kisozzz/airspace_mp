@@ -15,6 +15,31 @@ Page({
 
   changeScore(e){
     console.log(e.detail)
+    this.setData({
+      rating: e.detail.value
+    })
+  },
+
+  createReview(){
+    const space_id = this.data.space.id;
+    const user_id = 1;
+    let review = {
+      space_id: space_id,
+      user_id: user_id,
+      rating: rating,
+      content: content
+    }
+    wx.request({
+     url: `https://airspace-api.herokuapp.com/api/v1/spaces/${space_id}/reviews`,
+     method: 'POST',
+     data: { review: review },
+     success(res) {
+       console.log(res)
+        wx.redirectTo({
+          url: `/pages/my-bookings-listings/my-bookings-listings?id=${user_id}`
+        });
+      }
+    })
   },
   /**
    * 生命周期函数--监听页面加载
