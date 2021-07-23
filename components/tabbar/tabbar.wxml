@@ -1,8 +1,14 @@
 <!--components/tabbar.wxml-->
 <view class="bottom-tab row-center">
   <view class="icons w60 row-between">
-    <navigator url="/pages/landing/landing"><image src="/images/icons/home.svg" class="home-icon pa20"></image></navigator>
-    <!-- <navigator url="/pages/add_space/add_space"><image src="/images/icons/add.svg" class="add-icon pa20"></image></navigator> -->
-    <navigator url="/pages/my-bookings-listings/my-bookings-listings"><image src="/images/icons/me.svg" class="me-icon pa20"></image></navigator>
+
+    
+    <navigator wx:if="{{page === 'landing'}}" url="/pages/landing/landing"><image src="/images/icons/homeactive.svg" class="home-icon-bigger pa20"></image></navigator>
+    <navigator wx:else url="/pages/landing/landing"><image src="/images/icons/home.svg" class="home-icon pa20"></image></navigator>
+
+
+    <navigator wx:if="{{page === 'my-bookings-listings'}}" url="/pages/my-bookings-listings/my-bookings-listings"><image src="/images/icons/meactive.svg" class="me-icon pa20"></image></navigator>
+    <navigator wx:else url="/pages/my-bookings-listings/my-bookings-listings"><image src="/images/icons/me.svg" class="me-icon pa20"></image></navigator>
+
   </view>
 </view>
