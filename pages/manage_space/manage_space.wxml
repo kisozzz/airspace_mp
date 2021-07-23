@@ -18,4 +18,5 @@
       <btn color="red" text="Edit Space"/>
     </view>
 </scroll-view>
+
 <tabbar/>

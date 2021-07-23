@@ -40,13 +40,12 @@ Component({
     },
 
     editBooking() {
-      let page = this
-      console.log(this.data)
-      let booking = this.data.booking
-      page.setData({
-        showPopup: true,
-        booking: booking
+      this.selectOwnerComponent().showPopup()
+      this.selectOwnerComponent().setData({
+        booking: this.data.booking
       })
-    }
+    },
+
+
   }
 })

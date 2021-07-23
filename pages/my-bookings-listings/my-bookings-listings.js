@@ -20,11 +20,47 @@ Page({
   showBookings() {
     this.setData({ currentTab: 'bookings' })
   },
+
+  showPopup() {
+    this.setData({ showPopup: true})
+  },
+
+  updateBooking(e) {
+    const booking_id = this.data.booking.id
+    const space_id = this.data.booking.space_id
+    const user_id = this.data.booking.user_id
+    const start_date = new Date(e.detail.values.start_date);
+    const end_date = new Date(e.detail.values.end_date);
+    const number_of_people = e.detail.values.num;
+    const info = e.detail.values.info
+    let newBooking = {
+      space_id: space_id,
+      user_id: user_id,
+      start_date: start_date,
+      end_date: end_date,
+      number_of_people: number_of_people,
+      additional_info: info,
+      owner_response: false,
+      confirmed: false
+    }
+    console.log(newBooking)
+    wx.request({
+      url: `https://airspace-api.herokuapp.com/api/v1/spaces/${space_id}/bookings/${booking_id}`,
+      method: "PUT",
+      data: newBooking,
+      success() {
+        console.log("success")
+        // wx.navigateTo({
+        //   url: `../../pages/manage_space/manage_space?id=${booking.space_id}`,
+        // })
+      }
+    })
+  },
   /**
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-    const userID = options.id || 1
+    const userID = options.id || 22
     const targetTab = options.tab || null
 
     if (targetTab ===  'spaces') {
@@ -36,12 +72,12 @@ Page({
         currentTab: "bookings"
       })
     }
-
     const page = this;
       wx.request({
         url: `https://airspace-api.herokuapp.com/api/v1/bookings/user/${userID}`,
         method: "GET",
         success(res) {
+        console.log('request 1 bookings')
           const bookings = res.data.bookings
           page.setData({
             bookings: bookings
@@ -54,6 +90,7 @@ Page({
         // url: 'http://localhost:3000/api/v1/spaces',
         method: "GET",
         success(res) {
+          console.log('request 2 spaces')
           const spaces = res.data.spaces
           page.setData({
             spaces: spaces

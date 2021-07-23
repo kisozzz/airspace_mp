@@ -11,8 +11,8 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 48rpx;
+  line-height: 72rpx;
 
   color: #2C3D63;
 
@@ -22,11 +22,11 @@
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
-  line-height: 24px;
+  font-size: 24rpx;
+  line-height: 48rpx;
   /* identical to box height, or 200% */
 
-  letter-spacing: 1px;
+  letter-spacing: 2rpx;
 
   color: #2C3D63;
   /* padding: 10rpx; */
