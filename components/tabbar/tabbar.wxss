@@ -2,9 +2,13 @@
 @import '/app';
 
 .me-icon, .add-icon, .home-icon {
-  height: 40rpx;
-  width: 40rpx;
+  height: 50rpx;
+  width: 50rpx;
 }
+
+/* .active {
+  box-shadow: 2px 2px 2px #FF7162;
+} */
 
 .bottom-tab {
   position:fixed;

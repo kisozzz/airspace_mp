@@ -60,5 +60,5 @@
       </block>  
   </view>
 
-  <tabbar/>
+  <tabbar page="landing" />
 </view>
