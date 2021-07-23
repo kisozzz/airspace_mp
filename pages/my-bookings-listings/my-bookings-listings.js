@@ -25,6 +25,18 @@ Page({
    */
   onLoad: function (options) {
     const userID = options.id || 1
+    const targetTab = options.tab || null
+
+    if (targetTab ===  'spaces') {
+      this.setData({
+        currentTab: "spaces"
+      })
+    } else {
+      this.setData({
+        currentTab: "bookings"
+      })
+    }
+
     const page = this;
       wx.request({
         url: `https://airspace-api.herokuapp.com/api/v1/bookings/user/${userID}`,
