@@ -21,10 +21,13 @@
   <view class="container-form pa30">
     <view class="title-form pb20">Book Space</view>
     <l-form name="booking_form" l-form-btn-class="l-form-btn-class" bind:linsubmit="submit">
-        <l-form-item label="Date" name="date" class="label">
+        <l-form-item label="Start Date" name="start-date" class="label">
             <!-- <l-calendar show="{{ true }}" type="range" color="#f60"/> -->
-            <l-input id="date" value="{{booking_form.date}}" hide-label show-row="{{false}}"/>
-            
+            <l-input id="start-date" value="{{booking_form.start_date}}" hide-label show-row="{{false}}"/>
+        </l-form-item>
+        <l-form-item label="End Date" name="end-date" class="label">
+            <!-- <l-calendar show="{{ true }}" type="range" color="#f60"/> -->
+            <l-input id="end-date" value="{{booking_form.end_date}}" hide-label show-row="{{false}}"/>
         </l-form-item>
 
         <l-form-item label="Number of People" name="num" class="label">

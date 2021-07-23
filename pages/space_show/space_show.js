@@ -6,7 +6,8 @@ Page({
    */
   data: {
     booking_form: {
-      date: '',
+      start_date: '',
+      end_date: '',
       num: '',
       info: ''
     },
