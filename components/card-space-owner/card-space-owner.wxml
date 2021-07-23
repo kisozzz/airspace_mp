@@ -19,7 +19,7 @@
       <view class="f24 ml20 opacity7">{{space.price}}¥</view>
     </view>
     <view class="flex absolute b0 r0">
-      <view class="red-text">Edit</view>
+      <view bindtap="editSpace" class="red-text">Edit</view>
       <view bindtap="deleteSpace" class="red-text ml20">Delete</view>
     </view>
   </view>

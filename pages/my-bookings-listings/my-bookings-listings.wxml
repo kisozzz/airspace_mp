@@ -6,7 +6,7 @@
       <view bindtap="showSpaces" class="tabspaces fsheader {{currentTab=='spaces'?'tab-selected':''}}">My Spaces</view>
       <view bindtap="showBookings" class="tabbookings fsheader {{currentTab=='bookings'?'tab-selected':''}}">My Bookings</view>
   </view>
-  <!-- <view class="tabbookings tc py50 fsheader {{currentTab=='bookings'?'tab-selected':''}}">My Bookings</view> -->
+  <view wx:if="{{spaces.length === 0}}" class="tabbookings tc py50 fsheader {{currentTab=='bookings'?'tab-selected':''}}">My Bookings</view>
 
 </view>
 
@@ -27,6 +27,8 @@
       </view>
     </block>
   </view>
+
+  <navigator wx:else url="/pages/add_space/add_space"><image src="/images/icons/add.svg" class="add-icon absolute w10"></image></navigator>
 
   <tabbar page="my-bookings-listings" />
 </view>
