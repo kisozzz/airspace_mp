@@ -1,29 +1,33 @@
-<!--pages/space_show/space_show.wxml-->
+<!-- header and details -->
 <image src="{{space.image_urls[0]}}" class="banner-space flex w100"></image>
 <card-show class="card-info z1" info="{{space}}" />
 <view class="container">
   <view class="title py20">DETAILS</view>
   <view class="content">{{space.description}}</view>
+</view>
 
-
-  <view class="review-bar flex items-center mb100">
+<!-- reviews -->
+<view class="container pt0 mb100">
+  <view class="review-bar flex items-center">
     <view class="title pt50">REVIEWS</view>
     <navigator url="/pages/review_form/review_form?id={{space.id}}"><image src="/images/icons/add.svg" class="add-icon pl20 relative"></image></navigator>
   </view>
   <view>
-    <block wx:for="{{reviews}}" wx:for-item="review" wx:key="index">
+    <block wx:if="{{reviews}}" wx:for="{{reviews}}" wx:for-item="review" wx:key="index">
       <view class="mb20">
         <review-card review="{{review}}"/>
       </view>
     </block>
+    <view wx:els class="content pt20">
+      No reviews yet. Be the first to review this space!
+    </view>
   </view>
 </view>
 <tabbar />
 
-
+<!-- popup form -->
 <l-arc-popup show="{{showPopup}}" max-height="800" min-height="200">
   <view style="height: 800rpx;">
-<!-- form -->
   <view class="container-form pa30">
     <view class="title-form pb20">Book Space</view>
     <l-form name="booking_form" l-form-btn-class="l-form-btn-class" bind:linsubmit="submit">
