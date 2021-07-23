@@ -4,8 +4,9 @@
 <view class="container">
   <view class="title py20">DETAILS</view>
   <view class="content">{{space.description}}</view>
-  <view class="title my">REVIEWS</view>
-  <view>
+  
+  <view class="mb100">
+    <view class="title mt40">REVIEWS</view>
     <block wx:for="{{reviews}}" wx:for-item="review" wx:key="index">
       <view class="mb20">
         <review-card review="{{review}}"/>
