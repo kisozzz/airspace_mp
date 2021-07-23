@@ -33,9 +33,9 @@ Component({
     },
 
     editSpace(){
-      const user_id = this.data.space.user_id;
+      const space_id = this.data.space.id;
       wx.redirectTo({
-        url: `/pages/edit_space/edit_space?id=${user_id}`
+        url: `/pages/edit_space/edit_space?id=${space_id}`
       })
     }
 
